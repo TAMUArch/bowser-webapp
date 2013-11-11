@@ -44,3 +44,15 @@ end
 get '/secure/place' do
   erb "Welcome to your basic machine settings<%=session[:identity]%> has access to!"
 end
+
+#My Temporary Shit
+
+get '/network/form' do
+  erb :network_form
+end
+
+post '/network/form' do
+  puts "Your new hostname is #{params[:hostname]}"
+  cmd = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
+  redirect "/network/form"
+end
