@@ -9,7 +9,7 @@ end
 
 helpers do
   def username
-    session[:identity] ? session[:identity] : 'Hello stranger'
+    session[:identity] ? session[:identity] : 'Login!'
   end
 end
 
@@ -42,5 +42,5 @@ end
 
 
 get '/secure/place' do
-  erb "This is a secret place that only <%=session[:identity]%> has access to!"
+  erb "Welcome to your basic machine settings<%=session[:identity]%> has access to!"
 end
