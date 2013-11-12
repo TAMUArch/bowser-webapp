@@ -1,6 +1,6 @@
-
 require 'rubygems'
 require 'sinatra'
+require 'ohai'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
@@ -10,6 +10,11 @@ end
 helpers do
   def username
     session[:identity] ? session[:identity] : 'Login!'
+  end
+  def system
+    ohai = Ohai::System.new
+    ohai.all_plugins
+    ohai
   end
 end
 
@@ -53,6 +58,11 @@ end
 
 post '/network/form' do
   puts "Your new hostname is #{params[:hostname]}"
+  puts "Your new IP address is #{params[:ip]}"
   cmd = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
   redirect "/network/form"
+end
+
+get '/machine/stats' do
+  erb :machine_stats
 end

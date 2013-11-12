@@ -38,3 +38,12 @@ SECONDARY
 allow check in for inventory, of whos checking, in what version of bowser theyr running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
+
+
+CHANGES THAT NEED TO BE MADE TO BOWSER:
+
+clean up bowser directory
+install ruby
+install rbenv
+install ohai gem
+install sinatra
