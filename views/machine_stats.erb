@@ -2,4 +2,4 @@
 
 <p>IP Address: <%=system.ipaddress%></p>
 
-<p>Netmask: <%=system.network%></p>
+<p>Netmask: <%=system.network['interfaces']['em1']['addresses'][system.ipaddress]['netmask']%></p>
