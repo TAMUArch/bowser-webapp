@@ -46,9 +46,9 @@ get '/logout' do
 end
 
 
-get '/secure/place' do
-  erb "Welcome to your basic machine settings<%=session[:identity]%> has access to!"
-end
+#get '/secure/place' do
+#  erb "Welcome to your basic machine settings<%=session[:identity]%> has access to!"
+#end
 
 #My Temporary Shit
 
