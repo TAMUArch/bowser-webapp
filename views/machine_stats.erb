@@ -3,3 +3,5 @@
 <p>IP Address: <%=system.ipaddress%></p>
 
 <p>Netmask: <%=system.network['interfaces']['em1']['addresses'][system.ipaddress]['netmask']%></p>
+
+<p>Broadcast Address: <%=system.network['interfaces']['em1']['addresses'][system.ipaddress]['broadcast']%></p>
