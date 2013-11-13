@@ -4,6 +4,7 @@ require 'ohai'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
+  set :bind, '0.0.0.0'
   enable :sessions
 end
 
@@ -60,7 +61,9 @@ post '/network/form' do
   puts "Your new hostname is #{params[:hostname]}"
   puts "Your new IP address is #{params[:ip]}"
   hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
-  ip = `sudo ip addr add #{params[:ip]}/#{params[:subnet]} dev eth0`
+#  ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
+ 
+  puts "ip = sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}"
   redirect "/network/form"
 end
 

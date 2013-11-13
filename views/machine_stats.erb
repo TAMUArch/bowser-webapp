@@ -2,8 +2,10 @@
 
 <p>IP Address: <%=system.ipaddress%></p>
 
-<p>Netmask: <%=system.network['interfaces']['em1']['addresses'][system.ipaddress]['netmask']%></p>
+<h4>For wired, eth0 connections only</h4>
 
-<p>Broadcast Address: <%=system.network['interfaces']['em1']['addresses'][system.ipaddress]['broadcast']%></p>
+<p>Netmask: <%=system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']%></p>
+
+<p>Broadcast Address: <%=system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']%></p>
 
 <p>Gateway IP Address: <%=system.network['default_gateway']%></p>
