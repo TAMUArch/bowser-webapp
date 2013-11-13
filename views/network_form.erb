@@ -9,5 +9,15 @@
   <label for="interface">Set Interface, eth0</label>
   <input type="text" id="interface" name="interface"><br>
 
+  <label for="gateway">Gateway IP</label>
+  <input type="text" id="gateway" name="gateway"><br>
+
   <input type="submit">
 </form>
+
+<h3>DHCP Services</h3>
+<button type="button" onclick="systemctl restart dhcpcd@eth0.service">Restart DHCP Service</button><br><br>
+
+<button type="button" onclick="systemctl start dhcpcd@eth0.service">Start DHCP Service</button><br><br>
+
+<button type="button" onclick="systemctl enable dhcpcd@eth0.service">Start DHCP Service at Boot</button>

@@ -64,6 +64,8 @@ post '/network/form' do
 #  ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
  
   puts "ip = sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}"
+
+  puts "gateway = ip route add default via #{params[:gateway]}"
   redirect "/network/form"
 end
 
