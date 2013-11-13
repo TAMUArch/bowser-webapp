@@ -50,7 +50,7 @@ end
 #  erb "Welcome to your basic machine settings<%=session[:identity]%> has access to!"
 #end
 
-#My Temporary Shit
+#My Temporary Code
 
 get '/network/form' do
   erb :network_form
@@ -59,7 +59,8 @@ end
 post '/network/form' do
   puts "Your new hostname is #{params[:hostname]}"
   puts "Your new IP address is #{params[:ip]}"
-  cmd = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
+  hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
+  ip = `sudo ip addr add #{params[:ip]}/#{params[:subnet]} dev eth0`
   redirect "/network/form"
 end
 
