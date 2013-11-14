@@ -2,8 +2,6 @@ display / set ip
 
 be able to set statically or release an renew dhcp
 
-set hostname
-
 local auth
 
 mock up the app 1st

@@ -60,12 +60,10 @@ end
 post '/network/form' do
   puts "Your new hostname is #{params[:hostname]}"
   puts "Your new IP address is #{params[:ip]}"
-  hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
-#  ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
+  hostname = `echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}`
+  ip = `ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
  
-  puts "ip = sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}"
-
-  puts "gateway = ip route add default via #{params[:gateway]}"
+  gateway = `ip route add default via #{params[:gateway]}`
   redirect "/network/form"
 end
 
