@@ -11,15 +11,8 @@ mock up the app 1st
 front page
 basic machine info
 
-link to networking in the top bar
-goes to page that shows netorking info
 buttons for remove dhcp
 and add static
-
-
-first page
-click network
-
 
 
 to set static ip
