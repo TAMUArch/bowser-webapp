@@ -18,6 +18,8 @@
 <div class="aligncenter" style="width:200px;"><hr /></div>
 
 <h3>DHCP Services</h3>
+<button type="button" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service">Stop and Disbale DHCP Service</button><br><br>
+
 
 <button type="button" onclick="systemctl restart dhcpcd@eth0.service">Restart DHCP Service</button><br><br>
 
