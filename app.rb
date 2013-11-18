@@ -4,7 +4,7 @@ require 'ohai'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
-#  set :bind is for vagrant compatability
+#  uncomment for use with vagrant
 #  set :bind, '0.0.0.0'
   enable :sessions
 end
