@@ -1,3 +1,5 @@
+NOTES
+
 display / set ip
 
 be able to set statically or release an renew dhcp
