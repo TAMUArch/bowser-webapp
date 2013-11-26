@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'ohai'
+require 'slim'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
