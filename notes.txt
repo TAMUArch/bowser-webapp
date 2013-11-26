@@ -1,33 +1,5 @@
 NOTES
 
-display / set ip
-
-be able to set statically or release an renew dhcp
-
-local auth
-
-mock up the app 1st
-
-front page
-basic machine info
-
-buttons for remove dhcp
-and add static
-
-
-to set static ip
-IP
-network
-gateway
-netmask
-dns servers
-
-
-different page 
-hostname
-
-SECONDARY
-
 allow check in for inventory, of whos checking, in what version of bowser theyr running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
@@ -40,3 +12,12 @@ install ruby
 install rbenv
 install ohai gem
 install sinatra
+
+
+
+BOWSER WEBAPP
+
+enable login feature
+  => a hash of usernames and passwords
+
+add secure/bowser page
