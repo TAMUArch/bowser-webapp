@@ -1,8 +1,11 @@
-
 require 'rubygems'
 require 'sinatra'
 require 'slim'
 require 'ohai'
+require 'sinatra/contrib'
+require 'yaml'
+
+config_file 'secure.yaml'
 
 helpers do
 
@@ -26,9 +29,16 @@ end
 #end
 
 get '/' do
-  slim :signin
+  slim :login
 end
 
 get '/secure/bowser' do
-  slim :bowser
+  slim :secure
 end
+
+
+#YAML FILE LOOKS LIKE THIS:
+#
+#hash:
+#  charlie: texas
+#  root: admin
