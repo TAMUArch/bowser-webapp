@@ -1,0 +1,11 @@
+<p>Hostname: <%=system.fqdn%></p>
+
+<p>IP Address: <%=system.ipaddress%></p>
+
+<h4>For wired, eth0 connections only</h4>
+
+<p>Netmask: <%=system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']%></p>
+
+<p>Broadcast Address: <%=system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']%></p>
+
+<p>Gateway IP Address: <%=system.network['default_gateway']%></p>
