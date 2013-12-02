@@ -21,18 +21,21 @@ helpers do
   end
 end
 
-#=begin
 before '/secure/*' do
   unless session[:identity] == 'admin'
     session[:previous_url] = request.path
-    @error = 'You need to be logged in to access ' + request.path
     halt slim(:login)
+    redirect '/login/again'
+#    @error = 'You need to be logged in to access ' + request.path
   end
 end
-#=end
 
 get '/' do
   slim :login
+end
+
+get '/login/again' do
+  slim :again
 end
 
 post '/login/attempt' do
