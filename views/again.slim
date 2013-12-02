@@ -23,9 +23,10 @@ html
     div class="container"
 
       form.form-signin action='/login/attempt' method='post'
-        div.alert.alert-danger 
-          strong Dude! You gotta be logged in to get to #{request.path}
         h2.form-signin-heading Log In to Bowser Webapp
         input type="text" name="username" id="username" class="form-control" placeholder="Username"
         input type="password" name="password" id="password" class="form-control" placeholder="Password"
         button class="btn btn-lg btn-primary btn-block" type="submit" Sign in
+        br
+        div.alert.alert-danger
+          strong Username or Password is Incorrect

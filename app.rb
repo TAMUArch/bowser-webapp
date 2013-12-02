@@ -24,9 +24,7 @@ end
 before '/secure/*' do
   unless session[:identity] == 'admin'
     session[:previous_url] = request.path
-    halt slim(:login)
     redirect '/login/again'
-#    @error = 'You need to be logged in to access ' + request.path
   end
 end
 
@@ -43,7 +41,7 @@ post '/login/attempt' do
     session[:identity] = 'admin'
     redirect '/secure/bowser'
   else
-    redirect '/'
+    redirect '/login/again'
   end
 end
 
