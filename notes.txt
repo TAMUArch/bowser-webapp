@@ -17,7 +17,6 @@ install sinatra
 
 BOWSER WEBAPP
 
-enable login feature
-  => a hash of usernames and passwords
+add modal to secure/bowser
 
-add secure/bowser page
+prevent simply opening up secure/bowser in addressbar (bypassing sign in form)
