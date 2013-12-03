@@ -4,8 +4,6 @@ BOWSER WEBAPP:
 
 Add Modal to /secure/bowser
 
-Add Logout button to /secure/bowser
-
 Add progress effect to network changes in /secure/bowser
 
 
