@@ -19,10 +19,6 @@ helpers do
     ohai.all_plugins
     ohai
   end
-
-  def hostname
-    system.fqdn
-  end
 end
 
 before '/secure/*' do
