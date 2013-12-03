@@ -57,3 +57,11 @@ end
 get '/logged/out' do
   slim :logged_out
 end
+
+get '/secure/machine' do
+  erb :machine_stats
+end
+
+get '/secure/network' do
+  erb :network_form
+end
