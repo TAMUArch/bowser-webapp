@@ -19,6 +19,10 @@ helpers do
     ohai.all_plugins
     ohai
   end
+
+  def hostname
+    system.fqdn
+  end
 end
 
 before '/secure/*' do
@@ -49,7 +53,11 @@ get '/secure/bowser' do
   slim :secure
 end
 
-get '/logout' do
+post '/logout' do
   session.delete(:identity)
-  erb "<div class='alert alert-message'>Logged Out</div>"
+  redirect '/logged/out'
+end
+
+get '/logged/out' do
+  slim :logged_out
 end
