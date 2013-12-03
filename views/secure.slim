@@ -26,7 +26,7 @@ html
         h2.form-network-heading Secure Form
 
         label for="hostname" Hostname
-        input type="text" id="hostname" class="form-control" placeholder="#{system.fqdn}"
+        input type="text" id="hostname" class="form-control" placeholder="Hostname"
 
         label for="ip" IP Address
         input type="text" id="ip" class="form-control" placeholder="IP Address"
@@ -39,3 +39,8 @@ html
 
         label for="gateway" Gateway IP Address
         input type="text" id="gateway" class="form-control" placeholder="Gateway IP Address"
+
+      form.logout action ='/logout' method='post'
+
+        br
+        button class="btn btn-lg btn-primary btn-block" type="submit" Log out
