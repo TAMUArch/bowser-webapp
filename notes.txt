@@ -1,6 +1,20 @@
-NOTES
+NOTES:
 
-allow check in for inventory, of whos checking, in what version of bowser theyr running, send remote commands...
+BOWSER WEBAPP:
+
+Add Modal to /secure/bowser
+
+Add Logout button to /secure/bowser
+
+Add progress effect to network changes in /secure/bowser
+
+
+*************************************************************************************
+*************************************************************************************
+BOWSER INVERNTORY:
+
+allow check in for inventory, of whos checking,
+in what version of bowser theyr running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
 
@@ -12,11 +26,3 @@ install ruby
 install rbenv
 install ohai gem
 install sinatra
-
-
-
-BOWSER WEBAPP
-
-add modal to secure/bowser
-
-prevent simply opening up secure/bowser in addressbar (bypassing sign in form)
