@@ -2,9 +2,11 @@ NOTES:
 
 BOWSER WEBAPP:
 
-Add Modal to /secure/bowser
+feature_network: Get slim form to work with ohai
 
-Add progress effect to network changes in /secure/bowser
+feature_modal: Add Modal to /secure/bowser
+
+feature_progress: Add progress effect to network changes in /secure/bowser
 
 
 *************************************************************************************
