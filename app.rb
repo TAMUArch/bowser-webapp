@@ -49,6 +49,16 @@ get '/secure/bowser' do
   slim :secure
 end
 
+post '/secure/bowser' do
+  puts "Your new hostname is #{params[:hostname]}"
+  puts "Your new IP address is #{params[:ip]}"
+
+  hostname = `echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}`
+  ip = `ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
+  gateway = `ip route add default via #{params[:gateway]}`
+  redirect '/secure/bowser'
+end
+
 post '/logout' do
   session.delete(:identity)
   redirect '/logged/out'
