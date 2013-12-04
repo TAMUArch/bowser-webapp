@@ -2,7 +2,7 @@ NOTES:
 
 BOWSER WEBAPP:
 
-feature_network: Get slim form to work with ohai
+feature_network: Get app.rb to use input
 
 feature_modal: Add Modal to /secure/bowser
 
