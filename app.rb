@@ -9,7 +9,7 @@ config_file 'config.yml'
 
 configure do
 # uncomment for use with vagrant
-# set :bind, '0.0.0.0'
+#  set :bind, '0.0.0.0'
   enable :sessions
 end
 

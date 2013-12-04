@@ -22,24 +22,24 @@ html
 
     .container
 
-      form.form-network
+      form.form-network action="/secure/bowser" method="post"
         h2.form-network-heading Network Form
 
         label for="hostname" Hostname
-        input type="text" id="hostname" class="form-control" value = system.fqdn
+        input.form-control#hostname type="text" value = system.fqdn
 
         label for="ip" IP Address
-        input type="text" id="ip" class="form-control" value = system.ipaddress
+        input.form-control#ip type="text" value = system.ipaddress
 
         label for="netmask" Netmask
-        input type="text" id="netmask" class="form-control" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
+        input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
 
         label for="broadcast" Broadcast Address
-        input type="text" id="broadcast" class="form-control" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
+        input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
 
         label for="gateway" Gateway IP Address
-        input type="text" id="gateway" class="form-control" value = system.network['default_gateway']
+        input.form-control#gateway type="text" value = system.network['default_gateway']
 
-        form.logout action ='/logout' method='post'
-          br
-          button class="btn btn-lg btn-primary btn-block" type="submit" Log out
+      form.logout action ='/logout' method='post'
+        br
+        button class="btn btn-lg btn-primary btn-block" type="submit" Log out
