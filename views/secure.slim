@@ -53,6 +53,20 @@ html
               .modal-footer
                 button class="btn btn-lg btn-primary btn-block" type="submit" Submit
 
+        br
+        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#ping_modal" Ping!
+
+        div class="modal fade" id="ping_modal" tabindex="-1" role="dialog" aria-labelledby="ping_modal_label" aria-hidden="true"
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button class="close" data-dismiss="modal" aria-hidden="true"&times;
+                h4.modal-title#ping_modal_label Ping!
+              .modal-body
+                
+              .modal-footer
+                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+
 	form.ping action='/secure/ping' method='post'
 	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
 
