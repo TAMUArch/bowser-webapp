@@ -9,7 +9,7 @@ config_file 'config.yml'
 
 configure do
 # uncomment for use with vagrant
-# set :bind, '0.0.0.0'
+#  set :bind, '0.0.0.0'
   enable :sessions
 end
 
@@ -49,6 +49,16 @@ get '/secure/bowser' do
   slim :secure
 end
 
+post '/secure/bowser' do
+  puts "Your new hostname is #{params[:hostname]}"
+  puts "Your new IP address is #{params[:ip]}"
+
+  hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
+  ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
+  gateway = `sudo ip route add default via #{params[:gateway]}`
+  redirect '/secure/bowser'
+end
+
 post '/logout' do
   session.delete(:identity)
   redirect '/logged/out'
@@ -56,4 +66,12 @@ end
 
 get '/logged/out' do
   slim :logged_out
+end
+
+get '/secure/machine' do
+  erb :machine_stats
+end
+
+get '/secure/network' do
+  erb :network_form
 end
