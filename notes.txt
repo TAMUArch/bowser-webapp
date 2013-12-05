@@ -16,7 +16,8 @@ feature_alert: add dismiss functionality to all alerts
 WEBAPP REQUIREMENTS:
 
 Ping button that shows that network is succcessful
-  COMPLETE!!!
+  FUNCTIONAL!!!!!
+  Takes way too long because /secure/* reloads ohai every time
 
 Set Static IP
   Current Network Form attempts to achieve this.
