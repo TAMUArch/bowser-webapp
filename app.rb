@@ -2,8 +2,9 @@ require 'rubygems'
 require 'sinatra'
 require 'slim'
 require 'ohai'
-require 'sinatra/contrib'
 require 'yaml'
+require 'sinatra/contrib'
+require 'sinatra/flash'
 
 config_file 'config.yml'
 
@@ -59,6 +60,26 @@ post '/secure/bowser' do
   redirect '/secure/bowser'
 end
 
+post '/secure/ping' do
+  ping = `ping -q -c 3 8.8.8.8`
+  exit = $?.exitstatus
+  if exit == 0
+    redirect '/secure/good_ping'
+    puts "good ping"
+  else
+    redirect '/secure/bad_ping'
+    puts "bad ping"
+  end
+end
+
+get '/secure/good_ping' do
+  slim :good_ping
+end
+
+get '/secure/bad_ping' do
+  slim :bad_ping
+end
+
 post '/logout' do
   session.delete(:identity)
   redirect '/logged/out'
@@ -66,12 +87,4 @@ end
 
 get '/logged/out' do
   slim :logged_out
-end
-
-get '/secure/machine' do
-  erb :machine_stats
-end
-
-get '/secure/network' do
-  erb :network_form
 end

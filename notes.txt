@@ -2,33 +2,42 @@ NOTES:
 
 BOWSER WEBAPP:
 
-feature_network: Get app.rb to use input
-
-feature_modal: Add Modal to /secure/bowser
-
+  There will be 6 Buttons:
+    1: Set Static IP - modal form
+    2: Set Wireless - modal form
+    3: Ping!
+    4: Stop/Disable DHCP
+    5: Renew DHCP lease
+    6: Start DHCP at Boot
+ 
 feature_progress: Add progress effect to network changes in /secure/bowser
 
+feature_color: Change color of Logout button???
+
+feature_ping: Change ping from loading a new page to flashing an alert
 
 WEBAPP REQUIREMENTS:
 
-Ping button that shows that network is succcessful
-  No work done yet
+Ping button
+  FUNCTIONAL!!!!!
+  Takes way too long because /secure/* reloads ohai every time
+  Already added sinatra-flash to Gemfile and app.rb
+  Add dhcp buttons to good_ping and bad_ping in mean time
 
 Set Static IP
   Current Network Form attempts to achieve this.
   Not completed
 
 DHCP Buttons
-  Need to add. code mostly ready I think
-  Not completed
+  Buttons there. Pretty sure they're working.
 
 Wireless
-  No work done yet
-
+  Add content to modal form
+  Not completed
 
 *************************************************************************************
 *************************************************************************************
-BOWSER INVERNTORY:
+BOWSER INVENTORY:
 
 allow check in for inventory, of whos checking,
 in what version of bowser theyr running, send remote commands...
