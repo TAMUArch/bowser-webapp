@@ -11,6 +11,7 @@ feature_modal: Add Modal to /secure/bowser
 
 feature_progress: Add progress effect to network changes in /secure/bowser
 
+feature_dhcp: Add dhcp buttons to /secure/bowser
 
 WEBAPP REQUIREMENTS:
 
