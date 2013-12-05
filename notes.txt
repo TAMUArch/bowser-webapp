@@ -20,6 +20,7 @@ WEBAPP REQUIREMENTS:
 Ping button
   FUNCTIONAL!!!!!
   Takes way too long because /secure/* reloads ohai every time
+  Should Ping button simply be a popover??
 
 Set Static IP
   Current Network Form attempts to achieve this.

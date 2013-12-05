@@ -23,7 +23,21 @@ html
     .container
 
       form.form-network action="/secure/bowser" method="post"
-        h2.form-network-heading Network Form
+
+        h2.form-network-heading Bowser Webapp
+	
+        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#ip_modal" Set Static IP
+
+        div class="modal fade" id="ip_modal" tabindex="-1" role="dialog" aria-labelledby="ip_modal_label" aria-hidden="true"
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button class="close" data-dismiss="modal" aria-hidden="true"&times;
+                h4.modal-title#ip_modal_label Set Static IP
+              .modal-body
+              .modal-footer
+                button class="btn btn-default" data-dismiss="modal" Close
+
 
         label for="hostname" Hostname
         input.form-control#hostname type="text" name="hostname" value = system.fqdn
