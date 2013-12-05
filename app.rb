@@ -2,8 +2,9 @@ require 'rubygems'
 require 'sinatra'
 require 'slim'
 require 'ohai'
-require 'sinatra/contrib'
 require 'yaml'
+require 'sinatra/contrib'
+require 'sinatra/flash'
 
 config_file 'config.yml'
 

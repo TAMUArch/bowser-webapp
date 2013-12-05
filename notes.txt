@@ -15,6 +15,8 @@ feature_progress: Add progress effect to network changes in /secure/bowser
 
 feature_dhcp: Add dhcp buttons to /secure/bowser
 
+feature_color: Change color of Logout button???
+
 WEBAPP REQUIREMENTS:
 
 Ping button
