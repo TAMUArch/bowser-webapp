@@ -2,20 +2,22 @@ NOTES:
 
 BOWSER WEBAPP:
 
-feature_modal: Add Modal to /secure/bowser
-  There will be two buttons for modal forms:
-    1: Set Static IP
-    2: Set Wireless
-
+feature_modal: reformat /secure/bowser
+  There will be 6 Buttons:
+    1: Set Static IP - modal form
+    2: Set Wireless - modal form
+    3: Ping!
+    4: Stop/Disable DHCP
+    5: Renew DHCP lease
+    6: Start DHCP at Boot
+ 
 feature_progress: Add progress effect to network changes in /secure/bowser
 
 feature_dhcp: Add dhcp buttons to /secure/bowser
 
-feature_alert: add dismiss functionality to all alerts
-
 WEBAPP REQUIREMENTS:
 
-Ping button that shows that network is succcessful
+Ping button
   FUNCTIONAL!!!!!
   Takes way too long because /secure/* reloads ohai every time
 
@@ -24,7 +26,7 @@ Set Static IP
   Not completed
 
 DHCP Buttons
-  Need to add. code mostly ready I think
+  Need to add code mostly ready I think
   Not completed
 
 Wireless
