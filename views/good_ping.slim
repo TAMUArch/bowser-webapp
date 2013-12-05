@@ -10,7 +10,7 @@ html
     script src="https://code.jquery.com/jquery-1.10.2.min.js"
     script src="/vendor/dist/js/bootstrap.min.js"
 
-    link rel="shortcut icon" href="/vendor/docs-assets/ico/favicon.png"
+    link rel="shortcut icon" href="/vendor/docs-assets/ico/favicon.ico"
 
     / Bootstrap core CSS
     link rel="stylesheet" href="/vendor/dist/css/bootstrap.css"
@@ -23,30 +23,56 @@ html
     .container
 
       form.form-network action="/secure/bowser" method="post"
-        h2.form-network-heading Network Form
 
-        label for="hostname" Hostname
-        input.form-control#hostname type="text" name="hostname" value = system.fqdn
+        h2.form-network-heading Bowser Webapp
+	
+        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#ip_modal" Set Static IP
 
-        label for="ip" IP Address
-        input.form-control#ip type="text" value = system.ipaddress
+        div class="modal fade" id="ip_modal" tabindex="-1" role="dialog" aria-labelledby="ip_modal_label" aria-hidden="true"
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button class="close" data-dismiss="modal" aria-hidden="true"&times;
+                h4.modal-title#ip_modal_label Set Static IP
+              .modal-body
+                label for="hostname" Hostname
+                input.form-control#hostname type="text" name="hostname" value = system.fqdn
 
-        label for="netmask" Netmask
-        input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
+                label for="ip" IP Address
+                input.form-control#ip type="text" value = system.ipaddress
 
-        label for="broadcast" Broadcast Address
-        input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
+                label for="netmask" Netmask
+                input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
 
-        label for="gateway" Gateway IP Address
-        input.form-control#gateway type="text" value = system.network['default_gateway']
+                label for="broadcast" Broadcast Address
+                input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
+
+                label for="gateway" Gateway IP Address
+                input.form-control#gateway type="text" value = system.network['default_gateway']
+
+              .modal-footer
+                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
 
         br
-        button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#wireless_modal" Set Wireless
 
-	form.ping
+        div class="modal fade" id="wireless_modal" tabindex="-1" role="dialog" aria-labelledby="wireless_modal_label" aria-hidden="true"
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button class="close" data-dismiss="modal" aria-hidden="true"&times;
+                h4.modal-title#wireless_modal_label Set Wireless
+              .modal-body
+                
+              .modal-footer
+                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+
+	form.ping action='/secure/ping' method='post'
+	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
+	  br
 	  div.alert.alert-success.alert-dismissable
-	    button class="close" data-dismiss="alert" aria-hidden="true"&times;
-	    strong Ping Successful!
+            button class="close" data-dismiss="alert" aria-hidden="true"&times;
+            strong Ping Successful!
 
-	  form.logout action='/logout' method='post'
-            button class="btn btn-lg btn-primary btn-block" type="submit" Log out
+	form.logout action='/logout' method='post'
+          button class="btn btn-lg btn-primary btn-block" type="submit" Log out
