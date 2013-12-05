@@ -42,6 +42,11 @@ body {
   padding: 15px;
   margin: 0 auto;
 }
+.dhcp {
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+}
 .logout {
   max-width: 400px;
   padding: 15px;
