@@ -2,8 +2,6 @@ NOTES:
 
 BOWSER WEBAPP:
 
-feature_ping: Add Ping button to /secure/bowser
-
 feature_modal: Add Modal to /secure/bowser
   There will be two buttons for modal forms:
     1: Set Static IP
@@ -18,7 +16,7 @@ feature_alert: add dismiss functionality to all alerts
 WEBAPP REQUIREMENTS:
 
 Ping button that shows that network is succcessful
-  No work done yet
+  COMPLETE!!!
 
 Set Static IP
   Current Network Form attempts to achieve this.
