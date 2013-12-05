@@ -17,11 +17,14 @@ feature_dhcp: Add dhcp buttons to /secure/bowser
 
 feature_color: Change color of Logout button???
 
+feature_ping: Change ping from loading a new page to flashing an alert
+
 WEBAPP REQUIREMENTS:
 
 Ping button
   FUNCTIONAL!!!!!
   Takes way too long because /secure/* reloads ohai every time
+  Already added sinatra-flash to Gemfile and app.rb
 
 Set Static IP
   Current Network Form attempts to achieve this.
