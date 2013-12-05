@@ -2,9 +2,12 @@ NOTES:
 
 BOWSER WEBAPP:
 
-feature_network: Get app.rb to use input
+feature_ping: Add Ping button to /secure/bowser
 
 feature_modal: Add Modal to /secure/bowser
+  There will be two buttons for modal forms:
+    1: Set Static IP
+    2: Set Wireless
 
 feature_progress: Add progress effect to network changes in /secure/bowser
 
