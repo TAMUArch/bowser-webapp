@@ -33,7 +33,7 @@ Wireless
 
 *************************************************************************************
 *************************************************************************************
-BOWSER INVERNTORY:
+BOWSER INVENTORY:
 
 allow check in for inventory, of whos checking,
 in what version of bowser theyr running, send remote commands...
