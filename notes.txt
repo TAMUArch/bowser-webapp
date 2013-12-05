@@ -2,7 +2,6 @@ NOTES:
 
 BOWSER WEBAPP:
 
-feature_modal: reformat /secure/bowser
   There will be 6 Buttons:
     1: Set Static IP - modal form
     2: Set Wireless - modal form
