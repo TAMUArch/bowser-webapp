@@ -12,8 +12,6 @@ BOWSER WEBAPP:
  
 feature_progress: Add progress effect to network changes in /secure/bowser
 
-feature_dhcp: Add dhcp buttons to /secure/bowser
-
 feature_color: Change color of Logout button???
 
 feature_ping: Change ping from loading a new page to flashing an alert
@@ -24,14 +22,14 @@ Ping button
   FUNCTIONAL!!!!!
   Takes way too long because /secure/* reloads ohai every time
   Already added sinatra-flash to Gemfile and app.rb
+  Add dhcp buttons to good_ping and bad_ping in mean time
 
 Set Static IP
   Current Network Form attempts to achieve this.
   Not completed
 
 DHCP Buttons
-  Need to add code mostly ready I think
-  Not completed
+  Buttons there. Pretty sure they're working.
 
 Wireless
   Add content to modal form
