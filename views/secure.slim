@@ -70,5 +70,14 @@ html
 	form.ping action='/secure/ping' method='post'
 	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
 
+	form.dhcp
+	  button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Stop and Disable DHCP Service
+
+	  br
+	  button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew DHCP Lease
+
+	  br
+	  button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
+
 	form.logout action='/logout' method='post'
           button class="btn btn-lg btn-primary btn-block" type="submit" Log out
