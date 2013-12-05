@@ -78,6 +78,7 @@ end
 get '/secure/bad_ping' do
   slim :bad_ping
 end
+
 post '/logout' do
   session.delete(:identity)
   redirect '/logged/out'
@@ -85,12 +86,4 @@ end
 
 get '/logged/out' do
   slim :logged_out
-end
-
-get '/secure/machine' do
-  erb :machine_stats
-end
-
-get '/secure/network' do
-  erb :network_form
 end
