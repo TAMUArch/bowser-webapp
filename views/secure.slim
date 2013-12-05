@@ -35,27 +35,26 @@ html
                 button class="close" data-dismiss="modal" aria-hidden="true"&times;
                 h4.modal-title#ip_modal_label Set Static IP
               .modal-body
+                label for="hostname" Hostname
+                input.form-control#hostname type="text" name="hostname" value = system.fqdn
+
+                label for="ip" IP Address
+                input.form-control#ip type="text" value = system.ipaddress
+
+                label for="netmask" Netmask
+                input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
+
+                label for="broadcast" Broadcast Address
+                input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
+
+                label for="gateway" Gateway IP Address
+                input.form-control#gateway type="text" value = system.network['default_gateway']
+
+                br
+                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+
               .modal-footer
                 button class="btn btn-default" data-dismiss="modal" Close
-
-
-        label for="hostname" Hostname
-        input.form-control#hostname type="text" name="hostname" value = system.fqdn
-
-        label for="ip" IP Address
-        input.form-control#ip type="text" value = system.ipaddress
-
-        label for="netmask" Netmask
-        input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
-
-        label for="broadcast" Broadcast Address
-        input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
-
-        label for="gateway" Gateway IP Address
-        input.form-control#gateway type="text" value = system.network['default_gateway']
-
-        br
-        button class="btn btn-lg btn-primary btn-block" type="submit" Submit
 
 	form.ping action='/secure/ping' method='post'
 	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
