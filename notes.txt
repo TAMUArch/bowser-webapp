@@ -13,6 +13,8 @@ feature_progress: Add progress effect to network changes in /secure/bowser
 
 feature_dhcp: Add dhcp buttons to /secure/bowser
 
+feature_alert: add dismiss functionality to all alerts
+
 WEBAPP REQUIREMENTS:
 
 Ping button that shows that network is succcessful
