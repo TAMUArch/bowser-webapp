@@ -9,6 +9,23 @@ feature_modal: Add Modal to /secure/bowser
 feature_progress: Add progress effect to network changes in /secure/bowser
 
 
+WEBAPP REQUIREMENTS:
+
+Ping button that shows that network is succcessful
+  No work done yet
+
+Set Static IP
+  Current Network Form attempts to achieve this.
+  Not completed
+
+DHCP Buttons
+  Need to add. code mostly ready I think
+  Not completed
+
+Wireless
+  No work done yet
+
+
 *************************************************************************************
 *************************************************************************************
 BOWSER INVERNTORY:
@@ -18,11 +35,3 @@ in what version of bowser theyr running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
 
-
-CHANGES THAT NEED TO BE MADE TO BOWSER:
-
-clean up bowser directory
-install ruby
-install rbenv
-install ohai gem
-install sinatra
