@@ -63,21 +63,29 @@ html
                 button class="close" data-dismiss="modal" aria-hidden="true"&times;
                 h4.modal-title#wireless_modal_label Set Wireless
               .modal-body
-                
+
               .modal-footer
                 button class="btn btn-lg btn-primary btn-block" type="submit" Submit
 
+        br
+        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#dhcp_modal" Set DHCP
+
+        div class="modal fade" id="dhcp_modal" tabindex="-1" role="dialog" aria-labelledby="dhcp_modal_label" aria-hidden="true"
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button class="close" data-dismiss="modal" aria-hidden="true"&times;
+                h4.modal-title#dhcp_modal_label Set DHCP
+              .modal-body
+                button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Stop and Disable DHCP Service
+                br
+                button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew DHCP Lease
+                br
+                button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
+              .modal-footer
+
 	form.ping action='/secure/ping' method='post'
 	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
-
-	form.dhcp
-	  button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Stop and Disable DHCP Service
-
-	  br
-	  button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew DHCP Lease
-
-	  br
-	  button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
 
 	form.logout action='/logout' method='post'
           button class="btn btn-lg btn-primary btn-block" type="submit" Log out
