@@ -4,7 +4,7 @@ require 'slim'
 require 'ohai'
 require 'yaml'
 require 'sinatra/contrib'
-require 'sinatra/flash'
+require 'network_interface'
 
 config_file 'config.yml'
 
@@ -15,11 +15,6 @@ configure do
 end
 
 helpers do
-  def system
-    ohai = Ohai::System.new
-    ohai.all_plugins
-    ohai
-  end
 end
 
 before '/secure/*' do
@@ -51,8 +46,8 @@ get '/secure/bowser' do
 end
 
 post '/secure/bowser' do
-  puts "Your new hostname is #{params[:hostname]}"
-  puts "Your new IP address is #{params[:ip]}"
+#  puts "Your new hostname is #{params[:hostname]}"
+#  puts "Your new IP address is #{params[:ip]}"
 
   hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
   ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`

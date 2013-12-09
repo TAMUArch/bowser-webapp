@@ -35,20 +35,24 @@ html
                 button class="close" data-dismiss="modal" aria-hidden="true"&times;
                 h4.modal-title#ip_modal_label Set Static IP
               .modal-body
+
                 label for="hostname" Hostname
-                input.form-control#hostname type="text" name="hostname" value = system.fqdn
+                input.form-control#hostname type="text" name="hostname" value = `hostname`
 
                 label for="ip" IP Address
-                input.form-control#ip type="text" value = system.ipaddress
+                input.form-control#ip type="text" value = NetworkInterface.addresses('eth0')[2].first["addr"]
+
+                label for="interface" Interface
+                input.form-control#interface type="text" value = NetworkInterface.interfaces[1]
 
                 label for="netmask" Netmask
-                input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
+                input.form-control#netmask type="text" value = NetworkInterface.addresses('eth0')[2].first["netmask"]
 
                 label for="broadcast" Broadcast Address
-                input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
+                input.form-control#broadcast type="text" value = NetworkInterface.addresses('eth0')[2].first["broadcast"]
 
                 label for="gateway" Gateway IP Address
-                input.form-control#gateway type="text" value = system.network['default_gateway']
+                input.form-control#gateway type="text" value = NetworkInterface.class
 
               .modal-footer
                 button class="btn btn-lg btn-primary btn-block" type="submit" Submit
