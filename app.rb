@@ -4,7 +4,7 @@ require 'slim'
 require 'ohai'
 require 'yaml'
 require 'sinatra/contrib'
-require 'sinatra/flash'
+require 'network_interface'
 
 config_file 'config.yml'
 
@@ -15,11 +15,6 @@ configure do
 end
 
 helpers do
-  def system
-    ohai = Ohai::System.new
-    ohai.all_plugins
-    ohai
-  end
 end
 
 before '/secure/*' do
@@ -47,16 +42,26 @@ post '/login/attempt' do
 end
 
 get '/secure/bowser' do
+
+  gate = `ip route show | grep default`
+  way = gate.split(' ')
+  @gateway = way[2]
+
   slim :secure
 end
 
 post '/secure/bowser' do
-  puts "Your new hostname is #{params[:hostname]}"
-  puts "Your new IP address is #{params[:ip]}"
+
+  puts "Your hostname is #{params[:hostname]}"
+  puts "Your ip address is #{params[:ip]}"
+  puts "Your interface is #{params[:interface]}"
+  puts "Your netmask is #{params[:netmask]}"
+  puts "Your broadcast address is #{params[:broadcast]}"
+  puts "Your gateway address is #{params[:gateway]}"
 
   hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
-  ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
-  gateway = `sudo ip route add default via #{params[:gateway]}`
+#  ip = `sudo ip addr add #{params[:ip]}/24 dev #{params[:interface]}`
+#  gateway = `sudo ip route add default via #{params[:gateway]}`
   redirect '/secure/bowser'
 end
 

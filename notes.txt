@@ -10,11 +10,13 @@ BOWSER WEBAPP:
     5: Renew DHCP lease
     6: Start DHCP at Boot
  
-feature_progress: Add progress effect to network changes in /secure/bowser
+feature_effect: Add progress effect to network changes in /secure/bowser
 
 feature_color: Change color of Logout button???
 
 feature_ping: Change ping from loading a new page to flashing an alert
+
+feature_format: change webapp format to mimic github settings page
 
 WEBAPP REQUIREMENTS:
 
@@ -32,8 +34,7 @@ DHCP Buttons
   Buttons there. Pretty sure they're working.
 
 Wireless
-  Add content to modal form
-  Not completed
+  Down the road yo
 
 *************************************************************************************
 *************************************************************************************
