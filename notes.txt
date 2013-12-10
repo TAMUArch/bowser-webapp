@@ -10,7 +10,7 @@ BOWSER WEBAPP:
     5: Renew DHCP lease
     6: Start DHCP at Boot
  
-feature_effect: Add progress effect to network changes in /secure/bowser
+feature_effect: Add effect to dhcp buttons
 
 feature_color: Change color of Logout button???
 
