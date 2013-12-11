@@ -14,6 +14,20 @@ FUTURE FEATURES:
 
   feature_static: get the static ip form to actually configure the network
 
+  FEATURE_STATIC:
+
+    hostname: input changes hostname = CHECK
+
+    ip: input deletes old ip and adds new ip = NOPE
+
+    interface: input = SHOULD THIS EVEN DO ANYTHING (other than display the info)?
+
+    netmask: input changes netmask = NOPE
+
+    broadcast address: input changes broadcast address = NOPE
+
+    gateway: input changes gateway = NOPE
+
 REQUIREMENTS:
 
   Ping button
