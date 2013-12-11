@@ -2,46 +2,42 @@ NOTES:
 
 BOWSER WEBAPP:
 
-  There will be 6 Buttons:
-    1: Set Static IP - modal form
-    2: Set Wireless - modal form
-    3: Ping!
-    4: Stop/Disable DHCP
-    5: Renew DHCP lease
-    6: Start DHCP at Boot
- 
-feature_effect: Add effect to dhcp buttons
+FUTURE FEATURES:
 
-feature_color: Change color of Logout button???
+  feature_dhcp: add effect(alert?) to dhcp buttons
 
-feature_ping: Change ping from loading a new page to flashing an alert
+  feature_color: change color of logout button???
 
-feature_format: change webapp format to mimic github settings page
+  feature_ping: change ping from loading a new page to flashing an alert
 
-WEBAPP REQUIREMENTS:
+  feature_format: change webapp format to mimic github settings page
 
-Ping button
-  FUNCTIONAL!!!!!
-  Takes way too long because /secure/* reloads ohai every time
-  Already added sinatra-flash to Gemfile and app.rb
-  Add dhcp buttons to good_ping and bad_ping in mean time
+  feature_static: get the static ip form to actually configure the network
 
-Set Static IP
-  Current Network Form attempts to achieve this.
-  Not completed
+REQUIREMENTS:
 
-DHCP Buttons
-  Buttons there. Pretty sure they're working.
+  Ping button
+    Works
+    Change from loading new page to flashing an alert
+    Not Complete
 
-Wireless
-  Down the road yo
+  Set Static IP Form
+    Current static ip form attempts to achieve this.
+    Not complete
+
+  DHCP Buttons
+    Buttons there. Pretty sure they're working.
+    Not Complete
+
+  Wireless Form
+    Down the road yo
 
 *************************************************************************************
 *************************************************************************************
 BOWSER INVENTORY:
 
-allow check in for inventory, of whos checking,
-in what version of bowser theyr running, send remote commands...
+allow check in for inventory, of who's checking,
+in what version of bowser they're running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
 
