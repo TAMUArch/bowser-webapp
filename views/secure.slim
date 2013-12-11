@@ -54,6 +54,10 @@ html
                 label for="gateway" Gateway IP Address
                 input.form-control#gateway type="text" name="gateway" value = @gateway
 
+                br
+                p If you are running a private network, it is safe to use IP addresses in 192.168.*.* for your IP addresses,
+                  with a subnet mask of 255.255.255.0 and a broadcast address of 192.168.*.255.
+                  The gateway is usually 192.168.*.1 or 192.168.*.254.
               .modal-footer
                 button class="btn btn-lg btn-primary btn-block" type="submit" Submit
 
