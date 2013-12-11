@@ -14,6 +14,8 @@ FUTURE FEATURES:
 
   feature_static: get the static ip form to actually configure the network
 
+  feature_favicon: update favicon
+
   FEATURE_STATIC:
 
     hostname: input changes hostname = CHECK
@@ -27,6 +29,8 @@ FUTURE FEATURES:
     broadcast address: input changes broadcast address = NOPE
 
     gateway: input changes gateway = NOPE
+
+    ensure that all inputs only accept working parameters = NOPE
 
 REQUIREMENTS:
 

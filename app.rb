@@ -60,7 +60,11 @@ post '/secure/bowser' do
   puts "Your gateway address is #{params[:gateway]}"
 
   hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
-#  ip = `sudo ip addr add #{params[:ip]}/24 dev #{params[:interface]}`
+
+  old_ip = NetworkInterface.addresses('eth0')[2].first["addr"]
+  add_ip = `sudo ip addr add #{params[:ip]}/24 dev #{params[:interface]}`
+  delete_ip = `sudo ip addr delete #{old_ip}/24 dev #{params[:interface]}`
+
 #  gateway = `sudo ip route add default via #{params[:gateway]}`
   redirect '/secure/bowser'
 end
