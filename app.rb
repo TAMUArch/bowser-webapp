@@ -15,6 +15,11 @@ configure do
 end
 
 helpers do
+  def gateway
+    gate = `ip route show | grep default`
+    way = gate.split(' ')
+    @gateway = way[2]
+  end
 end
 
 before '/secure/*' do
@@ -42,11 +47,6 @@ post '/login/attempt' do
 end
 
 get '/secure/bowser' do
-
-  gate = `ip route show | grep default`
-  way = gate.split(' ')
-  @gateway = way[2]
-
   slim :secure
 end
 
