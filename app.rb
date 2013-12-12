@@ -58,47 +58,54 @@ end
 
 post '/secure/bowser' do
 
-  unless `hostname`.chomp == "#{params[:hostname]}"
+  config = false
+
+  unless `hostname`.chomp == params[:hostname]
     hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
     puts "Your hostname is #{params[:hostname]}"
+    config = true
   else
     puts "hostname input unchanged"
   end
 
   old_ip = NetworkInterface.addresses('eth0')[2].first["addr"]
 
-  unless old_ip == "#{params[:ip]}"
+  unless old_ip == params[:ip]
     add_ip = `sudo ip addr add #{params[:ip]}/#{params[:cidr]} dev #{params[:interface]}`
     delete_ip = `sudo ip addr delete #{old_ip}/#{params[:cidr]} dev #{params[:interface]}`
     puts "Your ip address is #{params[:ip]}"
     puts "Your interface is #{params[:interface]}"
+    config = true
   else
     puts "ip input unchanged"
   end
 
   old_net = NetworkInterface.addresses('eth0')[2].first["netmask"]
 
-  unless old_net == "#{params[:netmask]}"
+  unless old_net == params[:netmask]
     netmask = `sudo ifconfig #{params[:interface]} netmask #{params[:netmask]}`
     puts "Netmask in cidr #{params[:cidr]}"
     puts "Your netmask is #{params[:netmask]}"
+    config = true
   else
     puts "netmask input unchanged"
   end
 
-  unless gateway == "#{params[:gateway]}"
+  unless gateway == params[:gateway]
     permit = `sudo ip link set dev eth0`
     gateway = `sudo ip route add default via #{params[:gateway]}`
     puts "Your gateway address is #{params[:gateway]}"
+    config = true
   else
     puts "gateway input unchanged"
   end
 
   old_broad = NetworkInterface.addresses('eth0')[2].first["broadcast"]
 
-  unless old_broad == "#{params[:broadcast]}"
+  unless old_broad == params[:broadcast]
     broadcast = `sudo ifconfig #{params[:interface]} broadcast #{params[:broadcast]}`
     puts "Your broadcast address is #{params[:broadcast]}"
+    config = true
   else
     puts "broadcast input unchanged"
   end
