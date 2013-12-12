@@ -140,8 +140,14 @@ post '/secure/bowser' do
 
                   [Install]
                   WantedBy=multi-user.target" > network@.service`
+
+    copy1 = `cp network@#{params[:interface]}.service /etc/conf.d/network@#{params[:interface]}.service`
+    copy2 = `cp network@.service /etc/systemd/system/network@.service`
+
     enable = `systemctl enable network@#{params[:interface]}.service`
     start = `systemctl start network@#{params[:interface]}.service`
+  else
+    puts "config was false! no changes!"
   end
   redirect '/secure/bowser'
 end
