@@ -102,7 +102,6 @@ post '/secure/bowser' do
   else
     puts "broadcast input unchanged"
   end
-
   redirect '/secure/bowser'
 end
 

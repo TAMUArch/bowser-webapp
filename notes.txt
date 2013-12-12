@@ -18,23 +18,6 @@ FUTURE FEATURES:
 
   FEATURE_STATIC:
 
-    hostname: input changes hostname = CHECK
-
-    ip: input deletes old ip and adds new ip = CHECK
-
-    interface: input = SHOULD THIS EVEN DO ANYTHING (other than display the info)?
-      answer: no, i dont think so. just display it.
-      change the displayed information to a non editable format= NOPE
-
-    netmask: input changes netmask = NOPE
-      answer: not sure this needs to be changed either
-      if it does need to be changed its probably just in CIDR notation
-      add cidr notation input/display = CHECK
-
-    broadcast address: input changes broadcast address = NOPE
-
-    gateway: input changes gateway = CHECK
-
     restrict inputs to only accept working parameters = NOPE
 
     get inputs to edit network@.service and enable and start the service = NOPE
