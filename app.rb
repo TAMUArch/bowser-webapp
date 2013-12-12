@@ -71,6 +71,7 @@ post '/secure/bowser' do
   add_ip = `sudo ip addr add #{params[:ip]}/#{params[:cidr]} dev #{params[:interface]}`
   delete_ip = `sudo ip addr delete #{old_ip}/#{params[:cidr]} dev #{params[:interface]}`
 
+  permit = `sudo ip link set dev eth0`
   gateway = `sudo ip route add default via #{params[:gateway]}`
 
   redirect '/secure/bowser'
