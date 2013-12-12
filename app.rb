@@ -109,6 +109,40 @@ post '/secure/bowser' do
   else
     puts "broadcast input unchanged"
   end
+
+  if config == true
+    config1 = `touch network@#{params[:interface]}`
+    config2 = `touch network@.service`
+
+    echo1 = `echo "address=#{params[:ip]}
+                  netmask=#{params[:cidr]}
+                  broadcast=#{params[:broadcast]}
+                  gateway=#{params[:gateway]}" > network@#{params[:interface]}`
+
+    echo2 = `echo "[Unit]
+                  Description=Network connectivity (%i)
+                  Wants=network.target
+                  Before=network.target
+                  BindsTo=sys-subsystem-net-devices-%i.device
+                  After=sys-subsystem-net-devices-%i.device
+
+                  [Service]
+                  Type=oneshot
+                  RemainAfterExit=yes
+                  EnvironmentFile=/etc/conf.d/network@%i
+
+                  ExecStart=/usr/bin/ip link set dev %i up
+                  ExecStart=/usr/bin/ip addr add ${address}/${netmask} broadcast ${broadcast} dev %i
+                  ExecStart=/usr/bin/ip route add default via ${gateway}
+
+                  ExecStop=/usr/bin/ip addr flush dev %i
+                  ExecStop=/usr/bin/ip link set dev %i down
+
+                  [Install]
+                  WantedBy=multi-user.target" > network@.service`
+    enable = `systemctl enable network@#{params[:interface]}.service`
+    start = `systemctl start network@#{params[:interface]}.service`
+  end
   redirect '/secure/bowser'
 end
 
