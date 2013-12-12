@@ -16,11 +16,8 @@ FUTURE FEATURES:
 
   feature_favicon: update favicon
 
-  FEATURE_STATIC:
+  feature_restrict:  restrict inputs to only accept working parameters = NOPE
 
-    restrict inputs to only accept working parameters = NOPE
-
-    get inputs to edit network@.service and enable and start the service = NOPE
 
 REQUIREMENTS:
 
