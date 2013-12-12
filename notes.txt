@@ -66,3 +66,9 @@ in what version of bowser they're running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
 
+*************************************************************************************
+*************************************************************************************
+BOWSER:
+
+pacman net-tools
+  for ifconfig

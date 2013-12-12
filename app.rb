@@ -61,6 +61,7 @@ post '/secure/bowser' do
   puts "Your hostname is #{params[:hostname]}"
   puts "Your ip address is #{params[:ip]}"
   puts "Your interface is #{params[:interface]}"
+  puts "Netmask in cidr #{params[:cidr]}"
   puts "Your netmask is #{params[:netmask]}"
   puts "Your broadcast address is #{params[:broadcast]}"
   puts "Your gateway address is #{params[:gateway]}"
@@ -71,8 +72,12 @@ post '/secure/bowser' do
   add_ip = `sudo ip addr add #{params[:ip]}/#{params[:cidr]} dev #{params[:interface]}`
   delete_ip = `sudo ip addr delete #{old_ip}/#{params[:cidr]} dev #{params[:interface]}`
 
+  netmask = `sudo ifconfig #{params[:interface]} netmask #{params[:netmask]}`
+
   permit = `sudo ip link set dev eth0`
   gateway = `sudo ip route add default via #{params[:gateway]}`
+
+  broadcast = `sudo ifconfig #{params[:interface]} broadcast #{params[:broadcast]}`
 
   redirect '/secure/bowser'
 end
