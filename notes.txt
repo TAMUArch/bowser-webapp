@@ -14,6 +14,14 @@ FUTURE FEATURES:
 
   feature_static: get the static ip form to actually configure the network
 
+  feature_favicon: update favicon
+
+  FEATURE_STATIC:
+
+    restrict inputs to only accept working parameters = NOPE
+
+    get inputs to edit network@.service and enable and start the service = NOPE
+
 REQUIREMENTS:
 
   Ping button
@@ -41,3 +49,9 @@ in what version of bowser they're running, send remote commands...
 serial code
 inventory run locally, can use rails b/c database
 
+*************************************************************************************
+*************************************************************************************
+BOWSER:
+
+pacman net-tools
+  for ifconfig
