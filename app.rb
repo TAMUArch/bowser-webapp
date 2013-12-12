@@ -20,6 +20,12 @@ helpers do
     way = gate.split(' ')
     @gateway = way[2]
   end
+  def cidr
+    foo = `ip route show`
+    bar = foo.split('/')
+    foobar = bar[1].split(' ')
+    @cidr = foobar[0]
+  end
 end
 
 before '/secure/*' do
@@ -62,10 +68,11 @@ post '/secure/bowser' do
   hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
 
   old_ip = NetworkInterface.addresses('eth0')[2].first["addr"]
-  add_ip = `sudo ip addr add #{params[:ip]}/24 dev #{params[:interface]}`
-  delete_ip = `sudo ip addr delete #{old_ip}/24 dev #{params[:interface]}`
+  add_ip = `sudo ip addr add #{params[:ip]}/#{params[:cidr]} dev #{params[:interface]}`
+  delete_ip = `sudo ip addr delete #{old_ip}/#{params[:cidr]} dev #{params[:interface]}`
 
-#  gateway = `sudo ip route add default via #{params[:gateway]}`
+  gateway = `sudo ip route add default via #{params[:gateway]}`
+
   redirect '/secure/bowser'
 end
 
