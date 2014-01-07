@@ -6,19 +6,17 @@ FUTURE FEATURES:
 
   feature_dhcp: add effect(alert?) to dhcp buttons
 
-  feature_color: change color of logout button???
-
   feature_ping: change ping from loading a new page to flashing an alert
-
-  feature_format: change webapp format to mimic github settings page
-
-  feature_static: get the static ip form to actually configure the network
 
   feature_favicon: update favicon
 
-  feature_restrict:  restrict inputs to only accept working parameters = NOPE
+  feature_restrict: restrict inputs to only accept working parameters = NOPE
 
+  feature_cleanup: need to delete touched network files after they are copied
+                   to their correct locations (or just move them instead of copy)
 
+  feature_confd: does /etc/conf.d/ exist on bowser?
+                 it does not seem to exist on the vagrant box....
 REQUIREMENTS:
 
   Ping button

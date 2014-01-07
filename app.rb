@@ -115,37 +115,37 @@ post '/secure/bowser' do
     config2 = `touch network@.service`
 
     echo1 = `echo "address=#{params[:ip]}
-                  netmask=#{params[:cidr]}
-                  broadcast=#{params[:broadcast]}
-                  gateway=#{params[:gateway]}" > network@#{params[:interface]}`
+            netmask=#{params[:cidr]}
+            broadcast=#{params[:broadcast]}
+            gateway=#{params[:gateway]}" > network@#{params[:interface]}`
 
     echo2 = `echo "[Unit]
-                  Description=Network connectivity (%i)
-                  Wants=network.target
-                  Before=network.target
-                  BindsTo=sys-subsystem-net-devices-%i.device
-                  After=sys-subsystem-net-devices-%i.device
+            Description=Network connectivity (%i)
+            Wants=network.target
+            Before=network.target
+            BindsTo=sys-subsystem-net-devices-%i.device
+            After=sys-subsystem-net-devices-%i.device
 
-                  [Service]
-                  Type=oneshot
-                  RemainAfterExit=yes
-                  EnvironmentFile=/etc/conf.d/network@%i
+            [Service]
+            Type=oneshot
+            RemainAfterExit=yes
+            EnvironmentFile=/etc/conf.d/network@%i
 
-                  ExecStart=/usr/bin/ip link set dev %i up
-                  ExecStart=/usr/bin/ip addr add ${address}/${netmask} broadcast ${broadcast} dev %i
-                  ExecStart=/usr/bin/ip route add default via ${gateway}
+            ExecStart=/usr/bin/ip link set dev %i up
+            ExecStart=/usr/bin/ip addr add ${address}/${netmask} broadcast ${broadcast} dev %i
+            ExecStart=/usr/bin/ip route add default via ${gateway}
 
-                  ExecStop=/usr/bin/ip addr flush dev %i
-                  ExecStop=/usr/bin/ip link set dev %i down
+            ExecStop=/usr/bin/ip addr flush dev %i
+            ExecStop=/usr/bin/ip link set dev %i down
 
-                  [Install]
-                  WantedBy=multi-user.target" > network@.service`
+            [Install]
+            WantedBy=multi-user.target" > network@.service`
 
-    copy1 = `cp network@#{params[:interface]}.service /etc/conf.d/network@#{params[:interface]}.service`
-    copy2 = `cp network@.service /etc/systemd/system/network@.service`
+    copy1 = `sudo cp network@#{params[:interface]} /etc/conf.d/network@#{params[:interface]}`
+    copy2 = `sudo cp network@.service /etc/systemd/system/network@.service`
 
-    enable = `systemctl enable network@#{params[:interface]}.service`
-    start = `systemctl start network@#{params[:interface]}.service`
+    enable = `sudo systemctl enable network@#{params[:interface]}.service`
+    start = `sudo systemctl start network@#{params[:interface]}.service`
   else
     puts "config was false! no changes!"
   end
