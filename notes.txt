@@ -4,8 +4,11 @@ BOWSER WEBAPP:
 
 FUTURE FEATURES:
 
-  feature_dhcp: add effect(alert?) to dhcp buttons (there is a loading state for the buttons... perhaps use this)
+  feature_dhcp: add effect(alert?) to dhcp buttons 
+                (there is a loading state for the buttons... perhaps use this)
 
+  feature_pingpages: update good ping and bad ping pages to reflect 
+                     new page format
   feature_ping: change ping from loading a new page to flashing an alert
 
   feature_favicon: update favicon
@@ -17,6 +20,9 @@ FUTURE FEATURES:
 
   feature_confd: does /etc/conf.d/ exist on bowser?
                  it does not seem to exist on the vagrant box....
+
+  feature_sidenav: should highlight current location, 
+                   or bold current location and highlight hovering selection
 REQUIREMENTS:
 
   Ping button
@@ -25,11 +31,10 @@ REQUIREMENTS:
     Not Complete
 
   Set Static IP Form
-    Current static ip form attempts to achieve this.
-    Not complete
+    Works as far as I can tell
 
   DHCP Buttons
-    Buttons there. Pretty sure they're working.
+    Works as far as I can tell
     Not Complete
 
   Wireless Form

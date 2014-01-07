@@ -23,8 +23,8 @@ html
     .container
 
       div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
-        div class="navbar"
-          ul.nav class="nav nav-pills nav-stacked" data-spy="affix"
+        div class="bs-sidebar hidden-print affix"
+          ul.nav class="nav" data-spy="affix"
             li: a href="#setstatic" Set Static IP
             li: a href="#setwireless" Set Wireless
             li: a href="#setdhcp" Set DHCP
@@ -78,9 +78,9 @@ html
         button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
 
         h3.form-item-heading#ping Ping!
-        form.ping action='/secure/ping' method='post'
-          button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
+      form.ping action='/secure/ping' method='post'
+        button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
 
-        h3.form-item-heading#logout
-        form.logout action='/logout' method='post'
-          button class="btn btn-lg btn-default btn-block" type="submit" Log out
+      h3.form-item-heading#logout
+      form.logout action='/logout' method='post'
+        button class="btn btn-lg btn-default btn-block" type="submit" Log out
