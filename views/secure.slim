@@ -22,12 +22,14 @@ html
 
     .container
 
-      ul.nav class="nav nav-pills nav-stacked"
-        li class="active": a href="#setstatic" Set Static IP
-        li: a href="#setwireless" Set Wireless
-        li: a href="#setdhcp" Set DHCP
-        li: a href="#ping" Ping!
-        li: a href="#logout" Log out
+      div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
+        div class="navbar"
+          ul.nav class="nav nav-pills nav-stacked" data-spy="affix"
+            li: a href="#setstatic" Set Static IP
+            li: a href="#setwireless" Set Wireless
+            li: a href="#setdhcp" Set DHCP
+            li: a href="#ping" Ping!
+            li: a href="#logout" Log out
 
       form.form-network action="/secure/bowser" method="post"
 
