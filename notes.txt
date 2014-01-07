@@ -4,7 +4,7 @@ BOWSER WEBAPP:
 
 FUTURE FEATURES:
 
-  feature_dhcp: add effect(alert?) to dhcp buttons
+  feature_dhcp: add effect(alert?) to dhcp buttons (there is a loading state for the buttons... perhaps use this)
 
   feature_ping: change ping from loading a new page to flashing an alert
 
