@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Bowser Network
+    title Bowser Admin
 
     meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
@@ -25,15 +25,15 @@ html
       div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
         div.navbar class="bs-sidebar hidden-print affix"
           ul.nav class="nav" data-spy="affix"
-            li.nav-item: a href="#setstatic" Set Static IP
-            li.nav-item: a href="#setwireless" Set Wireless
-            li.nav-item: a href="#setdhcp" Set DHCP
-            li.nav-item: a href="#ping" Ping!
-            li.nav-item: a href="#logout" Log out
+            li: a.nav-item href="#setstatic" Set Static IP
+            li: a.nav-item href="#setwireless" Set Wireless
+            li: a.nav-item href="#setdhcp" Set DHCP
+            li: a.nav-item href="#ping" Ping!
+            li: a.nav-item href="#logout" Log out
 
       form.form-network action="/secure/bowser" method="post"
 
-        h2.form-network-heading Bowser Webapp
+        h2.form-network-heading Bowser Admin
 
         h3.form-item-heading#setstatic Set Static IP
 
@@ -59,10 +59,6 @@ html
         input.form-control#gateway type="text" name="gateway" value = gateway
 
         br
-        p If you are running a private network, it is safe to use IP addresses in 192.168.*.* for your IP addresses,
-          with a subnet mask of 255.255.255.0 and a broadcast address of 192.168.*.255.
-          The gateway is usually 192.168.*.1 or 192.168.*.254.
-
         button class="btn btn-lg btn-primary" type="submit" Submit
         /br
         /img src="line.png"
