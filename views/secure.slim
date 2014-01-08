@@ -22,18 +22,20 @@ html
 
     .container
 
+      div.logout class="header"
+        form action='/logout' method='post'
+          button.float class="btn btn-lg btn-default" type="submit" Log out
+          h2 Bowser Admin
+
       div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
         div.navbar class="bs-sidebar hidden-print affix"
           ul.nav class="nav" data-spy="affix"
             li: a.nav-item href="#setstatic" Set Static IP
             li: a.nav-item href="#setwireless" Set Wireless
             li: a.nav-item href="#setdhcp" Set DHCP
-            li: a.nav-item href="#ping" Ping!
-            li: a.nav-item href="#logout" Log out
+            li: a.nav-item href="#ping" Ping
 
       form.form-network action="/secure/bowser" method="post"
-
-        h2.form-network-heading Bowser Admin
 
         h3.form-item-heading#setstatic Set Static IP
 
@@ -60,8 +62,6 @@ html
 
         br
         button class="btn btn-lg btn-primary" type="submit" Submit
-        /br
-        /img src="line.png"
 
         h3.form-item-heading#setwireless Set Wireless
         p Function Not Enabled
@@ -73,10 +73,6 @@ html
         br
         button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
 
-        h3.form-item-heading#ping Ping!
       form.ping action='/secure/ping' method='post'
+        h3#ping Ping!
         button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
-
-      h3.form-item-heading#logout
-      form.logout action='/logout' method='post'
-        button class="btn btn-lg btn-default btn-block" type="submit" Log out

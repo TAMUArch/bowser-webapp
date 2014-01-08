@@ -47,6 +47,8 @@ body {
   max-width: 700px;
   padding: 15px;
   margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .dhcp {
   max-width: 700px;
@@ -67,9 +69,14 @@ body {
 .navbar {
   max-width: 200px;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 25px;
   text-align: left;
 }
 .nav-item {
   padding: 3px 15px;
+}
+.float {
+  max-width: 700px;
+  margin: 0 auto;
+  float: right !important;
 }
