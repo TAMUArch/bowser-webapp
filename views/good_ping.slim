@@ -22,65 +22,70 @@ html
 
     .container
 
+      div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
+        div.navbar class="bs-sidebar hidden-print affix"
+          ul.nav class="nav" data-spy="affix"
+            li.nav-item: a href="#setstatic" Set Static IP
+            li.nav-item: a href="#setwireless" Set Wireless
+            li.nav-item: a href="#setdhcp" Set DHCP
+            li.nav-item: a href="#ping" Ping!
+            li.nav-item: a href="#logout" Log out
+
       form.form-network action="/secure/bowser" method="post"
 
         h2.form-network-heading Bowser Webapp
-	
-        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#ip_modal" Set Static IP
 
-        div class="modal fade" id="ip_modal" tabindex="-1" role="dialog" aria-labelledby="ip_modal_label" aria-hidden="true"
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button class="close" data-dismiss="modal" aria-hidden="true"&times;
-                h4.modal-title#ip_modal_label Set Static IP
-              .modal-body
+        h3.form-item-heading#setstatic Set Static IP
 
-                label for="hostname" Hostname
-                input.form-control#hostname type="text" name="hostname" value = `hostname`
+        label for="hostname" Hostname
+        input.form-control#hostname type="text" name="hostname" value = `hostname`
 
-                label for="ip" IP Address
-                input.form-control#ip type="text" name="ip"value = NetworkInterface.addresses('eth0')[2].first["addr"]
+        label for="ip" IP Address
+        input.form-control#ip type="text" name="ip" value = NetworkInterface.addresses('eth0')[2].first["addr"]
 
-                label for="interface" Interface
-                input.form-control#interface type="text" name="interface" value = NetworkInterface.interfaces[1]
+        label for="interface" Interface
+        input.form-control#interface type="text" name="interface" value = NetworkInterface.interfaces[1]
 
-                label for="netmask" Netmask
-                input.form-control#netmask type="text" name="netmask" value = NetworkInterface.addresses('eth0')[2].first["netmask"]
+        label for="netmask" Netmask
+        input.form-control#netmask type="text" name="netmask" value = NetworkInterface.addresses('eth0')[2].first["netmask"]
 
-                label for="broadcast" Broadcast Address
-                input.form-control#broadcast type="text" name="broadcast" value = NetworkInterface.addresses('eth0')[2].first["broadcast"]
+        label for="cidr" CIDR Notation
+        input.form-control#cidr tye="text" name="cidr" value = cidr
 
-                label for="gateway" Gateway IP Address
-                input.form-control#gateway type="text" name="gateway" value = gateway
+        label for="broadcast" Broadcast Address
+        input.form-control#broadcast type="text" name="broadcast" value = NetworkInterface.addresses('eth0')[2].first["broadcast"]
 
-                p If you are running a private network, it is safe to use IP addresses in 192.168.*.* for your IP addresses,
-                  with a subnet mask of 255.255.255.0 and a broadcast address of 192.168.*.255.
-                  The gateway is usually 192.168.*.1 or 192.168.*.254.
-
-              .modal-footer
-                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+        label for="gateway" Gateway IP Address
+        input.form-control#gateway type="text" name="gateway" value = gateway
 
         br
-        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#wireless_modal" Set Wireless
+        p If you are running a private network, it is safe to use IP addresses in 192.168.*.* for your IP addresses,
+          with a subnet mask of 255.255.255.0 and a broadcast address of 192.168.*.255.
+          The gateway is usually 192.168.*.1 or 192.168.*.254.
 
-        div class="modal fade" id="wireless_modal" tabindex="-1" role="dialog" aria-labelledby="wireless_modal_label" aria-hidden="true"
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button class="close" data-dismiss="modal" aria-hidden="true"&times;
-                h4.modal-title#wireless_modal_label Set Wireless
-              .modal-body
+        button class="btn btn-lg btn-primary" type="submit" Submit
+        /br
+        /img src="line.png"
 
-              .modal-footer
-                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+        h3.form-item-heading#setwireless Set Wireless
+        p Function Not Enabled
 
-	form.ping action='/secure/ping' method='post'
-	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
-	  br
-	  div.alert.alert-success.alert-dismissable
+        h3.form-item-heading#setdhcp Set DHCP
+        button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Stop and Disable DHCP Service
+        br
+        button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew DHCP Lease
+        br
+        button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
+
+        h3.form-item-heading#ping Ping!
+      form.ping action='/secure/ping' method='post'
+        button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
+        br
+        div.alert.alert-success.alert-dismissable
             button class="close" data-dismiss="alert" aria-hidden="true"&times;
             strong Ping Successful!
 
-	form.logout action='/logout' method='post'
-          button class="btn btn-lg btn-primary btn-block" type="submit" Log out
+
+      h3.form-item-heading#logout
+      form.logout action='/logout' method='post'
+        button class="btn btn-lg btn-default btn-block" type="submit" Log out

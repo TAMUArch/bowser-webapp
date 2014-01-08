@@ -60,7 +60,17 @@ body {
 }
 .nav {
   max-width: 200px;
-  padding: 15px;
+  padding: 5px;
   margin: 0 auto;
   text-align: left;
+}
+.navbar {
+  max-width: 200px;
+  padding: 3px 15px;
+  margin: 0 auto;
+  margin-top: 75px;
+  text-align: left;
+}
+.nav-item {
+  padding: 3px 15px;
 }

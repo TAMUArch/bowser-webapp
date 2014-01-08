@@ -13,7 +13,7 @@ FUTURE FEATURES:
 
   feature_favicon: update favicon
 
-  feature_restrict: restrict inputs to only accept working parameters = NOPE
+  feature_restrict: restrict inputs to only accept working parameters
 
   feature_cleanup: need to delete touched network files after they are copied
                    to their correct locations (or just move them instead of copy)

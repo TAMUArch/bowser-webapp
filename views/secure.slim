@@ -23,13 +23,13 @@ html
     .container
 
       div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
-        div class="bs-sidebar hidden-print affix"
+        div.navbar class="bs-sidebar hidden-print affix"
           ul.nav class="nav" data-spy="affix"
-            li: a href="#setstatic" Set Static IP
-            li: a href="#setwireless" Set Wireless
-            li: a href="#setdhcp" Set DHCP
-            li: a href="#ping" Ping!
-            li: a href="#logout" Log out
+            li.nav-item: a href="#setstatic" Set Static IP
+            li.nav-item: a href="#setwireless" Set Wireless
+            li.nav-item: a href="#setdhcp" Set DHCP
+            li.nav-item: a href="#ping" Ping!
+            li.nav-item: a href="#logout" Log out
 
       form.form-network action="/secure/bowser" method="post"
 
