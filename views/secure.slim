@@ -43,19 +43,19 @@ html
         input.form-control#hostname type="text" name="hostname" value = `hostname`
 
         label for="ip" IP Address
-        input.form-control#ip type="text" name="ip" value = NetworkInterface.addresses('eth0')[2].first["addr"]
+        input.form-control#ip type="text" name="ip" value = NetworkInterface.addresses(@networkname)[2].first["addr"]
 
         label for="interface" Interface
         input.form-control#interface type="text" name="interface" value = NetworkInterface.interfaces[1]
 
         label for="netmask" Netmask
-        input.form-control#netmask type="text" name="netmask" value = NetworkInterface.addresses('eth0')[2].first["netmask"]
+        input.form-control#netmask type="text" name="netmask" value = NetworkInterface.addresses(@networkname)[2].first["netmask"]
 
         label for="cidr" CIDR Notation
         input.form-control#cidr tye="text" name="cidr" value = cidr
 
         label for="broadcast" Broadcast Address
-        input.form-control#broadcast type="text" name="broadcast" value = NetworkInterface.addresses('eth0')[2].first["broadcast"]
+        input.form-control#broadcast type="text" name="broadcast" value = NetworkInterface.addresses(@networkname)[2].first["broadcast"]
 
         label for="gateway" Gateway IP Address
         input.form-control#gateway type="text" name="gateway" value = gateway

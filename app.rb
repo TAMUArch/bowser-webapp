@@ -26,6 +26,11 @@ helpers do
     foobar = bar[1].split(' ')
     @cidr = foobar[0]
   end
+  def networkname
+    network = `ip route show | grep default`
+    name = network.split(' ')
+    @networkname = name[4]
+  end
 end
 
 before '/secure/*' do
