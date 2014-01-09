@@ -55,3 +55,29 @@ BOWSER:
 
 pacman net-tools
   for ifconfig
+
+*************************************************************************************
+*************************************************************************************
+
+Getting Bowser Admin on Bowser
+
+Run with Unicorn not WEBBRICK
+
+Get it to run at boot using systemd
+
+make it so typing "admin" in search bar takes you to page
+
+  update app.rb 
+    set :port, '80'
+
+cp /etc/hosts
+
+#
+#/etc/hosts: static lookup table for host names
+#
+
+#<ip-address>     <hostname.domain.org>                       <hostname>
+127.0.0.12        admin.localdomain localhost.localdomain     localhost
+::1               localhost.localdomain                       localhost
+
+# End of file
