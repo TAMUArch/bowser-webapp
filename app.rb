@@ -1,16 +1,17 @@
 require 'rubygems'
 require 'sinatra'
 require 'slim'
-require 'ohai'
 require 'yaml'
 require 'sinatra/contrib'
 require 'network_interface'
+require 'unicorn'
 
 config_file 'config.yml'
 
 configure do
 # uncomment for use with vagrant
-#  set :bind, '0.0.0.0'
+# set :bind, '0.0.0.0'
+  set :port, '80'
   enable :sessions
 end
 
