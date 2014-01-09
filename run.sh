@@ -2,6 +2,6 @@
 #
 # Launch the app using rerun (reloads when files are modified)
 
-bundle exec rerun app.rb
+bundle exec unicorn -l 4567
 
 # Otherwise just 'bundle exec ruby app.rb'
