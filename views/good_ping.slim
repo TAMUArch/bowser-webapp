@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Bowser Network
+    title Bowser Admin
 
     meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
@@ -22,57 +22,61 @@ html
 
     .container
 
+      div.logout class="header"
+        form action='/logout' method='post'
+          button.float class="btn btn-lg btn-default" type="submit" Log out
+          h2 Bowser Admin
+
+      div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
+        div.navbar class="bs-sidebar hidden-print affix"
+          ul.nav class="nav" data-spy="affix"
+            li: a href="#setstatic" Set Static IP
+            li: a href="#setwireless" Set Wireless
+            li: a href="#setdhcp" Set DHCP
+            li: a href="#ping" Ping
+
       form.form-network action="/secure/bowser" method="post"
 
-        h2.form-network-heading Bowser Webapp
-	
-        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#ip_modal" Set Static IP
+        h3.form-item-heading#setstatic Set Static IP
 
-        div class="modal fade" id="ip_modal" tabindex="-1" role="dialog" aria-labelledby="ip_modal_label" aria-hidden="true"
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button class="close" data-dismiss="modal" aria-hidden="true"&times;
-                h4.modal-title#ip_modal_label Set Static IP
-              .modal-body
-                label for="hostname" Hostname
-                input.form-control#hostname type="text" name="hostname" value = system.fqdn
+        label for="hostname" Hostname
+        input.form-control#hostname type="text" name="hostname" value = `hostname`
 
-                label for="ip" IP Address
-                input.form-control#ip type="text" value = system.ipaddress
+        label for="ip" IP Address
+        input.form-control#ip type="text" name="ip" value = NetworkInterface.addresses(networkname)[2].first["addr"]
 
-                label for="netmask" Netmask
-                input.form-control#netmask type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['netmask']
+        label for="interface" Interface
+        input.form-control#interface type="text" name="interface" value = NetworkInterface.interfaces[1]
 
-                label for="broadcast" Broadcast Address
-                input.form-control#broadcast type="text" value = system.network['interfaces']['eth0']['addresses'][system.ipaddress]['broadcast']
+        label for="netmask" Netmask
+        input.form-control#netmask type="text" name="netmask" value = NetworkInterface.addresses(networkname)[2].first["netmask"]
 
-                label for="gateway" Gateway IP Address
-                input.form-control#gateway type="text" value = system.network['default_gateway']
+        label for="cidr" CIDR Notation
+        input.form-control#cidr tye="text" name="cidr" value = cidr
 
-              .modal-footer
-                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+        label for="broadcast" Broadcast Address
+        input.form-control#broadcast type="text" name="broadcast" value = NetworkInterface.addresses(networkname)[2].first["broadcast"]
+
+        label for="gateway" Gateway IP Address
+        input.form-control#gateway type="text" name="gateway" value = gateway
 
         br
-        button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#wireless_modal" Set Wireless
+        button class="btn btn-lg btn-primary" type="submit" Submit
 
-        div class="modal fade" id="wireless_modal" tabindex="-1" role="dialog" aria-labelledby="wireless_modal_label" aria-hidden="true"
-          .modal-dialog
-            .modal-content
-              .modal-header
-                button class="close" data-dismiss="modal" aria-hidden="true"&times;
-                h4.modal-title#wireless_modal_label Set Wireless
-              .modal-body
-                
-              .modal-footer
-                button class="btn btn-lg btn-primary btn-block" type="submit" Submit
+        h3.form-item-heading#setwireless Set Wireless
+        p Function Not Enabled
 
-	form.ping action='/secure/ping' method='post'
-	  button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
-	  br
-	  div.alert.alert-success.alert-dismissable
-            button class="close" data-dismiss="alert" aria-hidden="true"&times;
-            strong Ping Successful!
+        h3.form-item-heading#setdhcp Set DHCP
+        button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Stop and Disable DHCP Service
+        br
+        button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew DHCP Lease
+        br
+        button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
 
-	form.logout action='/logout' method='post'
-          button class="btn btn-lg btn-primary btn-block" type="submit" Log out
+      form.ping action='/secure/ping' method='post'
+        h3#ping Ping!
+        button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
+        br
+        div.alert.alert-success.alert-dismissable
+          button class="close" data-dismiss="alert" aria-hidden="true"&times;
+          strong Ping Successful!

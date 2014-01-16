@@ -5,7 +5,7 @@ body {
 }
 
 .form-network {
-  max-width: 400px;
+  max-width: 700px;
   padding: 15px;
   margin: 0 auto;
 }
@@ -14,6 +14,12 @@ body {
 }
 .form-network .form-network-heading {
   text-align: center;
+}
+.form-network .form-item-heading {
+  margin-bottom: 10px;
+}
+.form-network .form-item-heading {
+  text-align: left;
 }
 .form-network .form-control {
   position: relative;
@@ -38,17 +44,39 @@ body {
   border-top-right-radius: 0;
 }
 .ping {
-  max-width: 400px;
+  max-width: 700px;
   padding: 15px;
   margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: left;
 }
 .dhcp {
-  max-width: 400px;
+  max-width: 700px;
   padding: 15px;
   margin: 0 auto;
 }
 .logout {
-  max-width: 400px;
+  max-width: 700px;
   padding: 15px;
   margin: 0 auto;
+}
+.nav {
+  max-width: 200px;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: left;
+}
+.navbar {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: left;
+}
+.nav-item {
+  padding: 3px 15px;
+}
+.float {
+  max-width: 700px;
+  margin: 0 auto;
+  float: right !important;
 }

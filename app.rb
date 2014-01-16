@@ -1,24 +1,36 @@
 require 'rubygems'
 require 'sinatra'
 require 'slim'
-require 'ohai'
 require 'yaml'
 require 'sinatra/contrib'
-require 'sinatra/flash'
+require 'network_interface'
+require 'unicorn'
 
 config_file 'config.yml'
 
 configure do
 # uncomment for use with vagrant
-#  set :bind, '0.0.0.0'
+# set :bind, '0.0.0.0'
+  set :port, '80'
   enable :sessions
 end
 
 helpers do
-  def system
-    ohai = Ohai::System.new
-    ohai.all_plugins
-    ohai
+  def gateway
+    gate = `ip route show | grep default`
+    way = gate.split(' ')
+    @gateway = way[2]
+  end
+  def cidr
+    foo = `ip route show`
+    bar = foo.split('/')
+    foobar = bar[1].split(' ')
+    @cidr = foobar[0]
+  end
+  def networkname
+    network = `ip route show | grep default`
+    name = network.split(' ')
+    @networkname = name[4]
   end
 end
 
@@ -51,12 +63,98 @@ get '/secure/bowser' do
 end
 
 post '/secure/bowser' do
-  puts "Your new hostname is #{params[:hostname]}"
-  puts "Your new IP address is #{params[:ip]}"
 
-  hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
-  ip = `sudo ip addr add #{params[:ip]}/#{system.network['interfaces']['eth0']['addresses'][system.ipaddress]['prefixlen']} dev #{params[:interface]}`
-  gateway = `sudo ip route add default via #{params[:gateway]}`
+  config = false
+
+  unless `hostname`.chomp == params[:hostname]
+    hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
+    puts "Your hostname is #{params[:hostname]}"
+    config = true
+  else
+    puts "hostname input unchanged"
+  end
+
+  old_ip = NetworkInterface.addresses('eth0')[2].first["addr"]
+
+  unless old_ip == params[:ip]
+    add_ip = `sudo ip addr add #{params[:ip]}/#{params[:cidr]} dev #{params[:interface]}`
+    delete_ip = `sudo ip addr delete #{old_ip}/#{params[:cidr]} dev #{params[:interface]}`
+    puts "Your ip address is #{params[:ip]}"
+    puts "Your interface is #{params[:interface]}"
+    config = true
+  else
+    puts "ip input unchanged"
+  end
+
+  old_net = NetworkInterface.addresses('eth0')[2].first["netmask"]
+
+  unless old_net == params[:netmask]
+    netmask = `sudo ifconfig #{params[:interface]} netmask #{params[:netmask]}`
+    puts "Netmask in cidr #{params[:cidr]}"
+    puts "Your netmask is #{params[:netmask]}"
+    config = true
+  else
+    puts "netmask input unchanged"
+  end
+
+  unless gateway == params[:gateway]
+    permit = `sudo ip link set dev eth0`
+    gateway = `sudo ip route add default via #{params[:gateway]}`
+    puts "Your gateway address is #{params[:gateway]}"
+    config = true
+  else
+    puts "gateway input unchanged"
+  end
+
+  old_broad = NetworkInterface.addresses('eth0')[2].first["broadcast"]
+
+  unless old_broad == params[:broadcast]
+    broadcast = `sudo ifconfig #{params[:interface]} broadcast #{params[:broadcast]}`
+    puts "Your broadcast address is #{params[:broadcast]}"
+    config = true
+  else
+    puts "broadcast input unchanged"
+  end
+
+  if config == true
+    config1 = `touch network@#{params[:interface]}`
+    config2 = `touch network@.service`
+
+    echo1 = `echo "address=#{params[:ip]}
+            netmask=#{params[:cidr]}
+            broadcast=#{params[:broadcast]}
+            gateway=#{params[:gateway]}" > network@#{params[:interface]}`
+
+    echo2 = `echo "[Unit]
+            Description=Network connectivity (%i)
+            Wants=network.target
+            Before=network.target
+            BindsTo=sys-subsystem-net-devices-%i.device
+            After=sys-subsystem-net-devices-%i.device
+
+            [Service]
+            Type=oneshot
+            RemainAfterExit=yes
+            EnvironmentFile=/etc/conf.d/network@%i
+
+            ExecStart=/usr/bin/ip link set dev %i up
+            ExecStart=/usr/bin/ip addr add ${address}/${netmask} broadcast ${broadcast} dev %i
+            ExecStart=/usr/bin/ip route add default via ${gateway}
+
+            ExecStop=/usr/bin/ip addr flush dev %i
+            ExecStop=/usr/bin/ip link set dev %i down
+
+            [Install]
+            WantedBy=multi-user.target" > network@.service`
+
+    copy1 = `sudo cp network@#{params[:interface]} /etc/conf.d/network@#{params[:interface]}`
+    copy2 = `sudo cp network@.service /etc/systemd/system/network@.service`
+
+    enable = `sudo systemctl enable network@#{params[:interface]}.service`
+    start = `sudo systemctl start network@#{params[:interface]}.service`
+  else
+    puts "config was false! no changes!"
+  end
   redirect '/secure/bowser'
 end
 

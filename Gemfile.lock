@@ -4,25 +4,15 @@ GEM
     backports (3.3.5)
     eventmachine (1.0.3)
     ffi (1.9.3)
-    ipaddress (0.8.0)
+    kgio (2.8.1)
     listen (0.7.1)
-    mixlib-cli (1.3.0)
-    mixlib-config (1.1.2)
-    mixlib-log (1.6.0)
-    mixlib-shellout (1.2.0)
-    ohai (6.18.0)
-      ipaddress
-      mixlib-cli
-      mixlib-config
-      mixlib-log
-      mixlib-shellout
-      systemu
-      yajl-ruby
+    network_interface (0.0.1)
     rack (1.4.2)
     rack-protection (1.3.2)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    raindrops (0.12.0)
     rb-fsevent (0.9.3)
     rb-inotify (0.8.8)
       ffi (>= 0.5.0)
@@ -39,25 +29,25 @@ GEM
       rack-test
       sinatra (~> 1.3.0)
       tilt (~> 1.3)
-    sinatra-flash (0.3.0)
-      sinatra (>= 1.0.0)
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
-    systemu (2.5.2)
     temple (0.6.7)
     tilt (1.3.3)
-    yajl-ruby (1.1.0)
+    unicorn (4.7.0)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  ohai
+  network_interface
   rb-fsevent (~> 0.9.1)
   rb-inotify (~> 0.8.8)
   rerun
   sinatra
   sinatra-contrib
-  sinatra-flash
   slim
+  unicorn
