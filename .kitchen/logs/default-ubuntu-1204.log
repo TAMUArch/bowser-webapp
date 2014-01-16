@@ -1,0 +1,1469 @@
+I, [2014-01-16T14:39:07.285501 #2767]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:39:07.285706 #2767]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:39:07.307955 #2767]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-01-16T14:39:07.308328 #2767]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:39:07.308635 #2767]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:39:09.620186 #2767]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T14:39:09.957173 #2767]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 60%Progress: 80%Progress: 90%I, [2014-01-16T14:39:28.976526 #2767]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T14:39:29.888681 #2767]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T14:39:30.123754 #2767]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T14:39:30.349031 #2767]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T14:39:32.061838 #2767]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T14:39:32.340506 #2767]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T14:39:32.340736 #2767]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T14:39:32.456851 #2767]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T14:39:32.570914 #2767]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T14:39:32.700214 #2767]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T14:39:33.195258 #2767]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T14:39:33.317150 #2767]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T14:39:33.718816 #2767]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T14:39:54.558132 #2767]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T14:39:54.800949 #2767]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T14:40:00.125672 #2767]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T14:40:03.049889 #2767]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T14:40:03.050949 #2767]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m55.74s).
+I, [2014-01-16T14:40:03.051045 #2767]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T14:40:03.051462 #2767]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T14:40:03.051755 #2767]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T14:40:03.832601 #2767]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T14:40:03.833974 #2767]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T14:40:04.019912 #2767]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T14:40:04.020062 #2767]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T14:40:04.020131 #2767]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T14:40:04.020191 #2767]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T14:40:04.207574 #2767]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T14:40:04.208731 #2767]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1091/metadata.txtI, [2014-01-16T14:40:04.208940 #2767]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:40:04.209341 #2767]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:40:04.403816 #2767]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T14:40:04.404720 #2767]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T14:40:04.405693 #2767]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T14:40:04.410534 #2767]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:40:04.412530 #2767]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1091/chef__amd64.debI, [2014-01-16T14:40:04.412817 #2767]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:40:04.413064 #2767]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T14:40:09.245876 #2767]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T14:40:09.246905 #2767]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T14:40:09.247100 #2767]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T14:40:09.287362 #2767]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T14:40:09.374469 #2767]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T14:40:09.377247 #2767]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T14:40:13.878246 #2767]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T14:40:13.896576 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:13.955951 #2767]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T20:40:15+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T14:40:15.999604 #2767]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T14:40:16.060783 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T14:40:16.061015 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Chef-client pid: 1168I, [2014-01-16T14:40:16.061222 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T14:40:16.432612 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T14:40:16.436733 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T14:40:16.437018 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T14:40:16.437491 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Running start handlersI, [2014-01-16T14:40:16.437904 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] INFO: Start handlers complete.I, [2014-01-16T14:40:16.438181 #2767]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T14:40:16.442170 #2767]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:40:16.449298 #2767]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:40:16.449554 #2767]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T14:40:16.449870 #2767]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:40:16.450306 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.450574 #2767]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:40:16.450907 #2767]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T14:40:16.451345 #2767]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T14:40:16.451782 #2767]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T14:40:16.452225 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.452491 #2767]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:40:16.452892 #2767]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T14:40:16.453329 #2767]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T14:40:16.453729 #2767]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T14:40:16.454186 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.454354 #2767]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:40:16.454806 #2767]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T14:40:16.455753 #2767]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T14:40:16.456152 #2767]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T14:40:16.456551 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.456692 #2767]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T14:40:16.456934 #2767]  INFO -- default-ubuntu-1204: 
+  5:  # Copyright (C) 2014 YOUR_NAMEI, [2014-01-16T14:40:16.457310 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.457343 #2767]  INFO -- default-ubuntu-1204:   6:  # 
+I, [2014-01-16T14:40:16.457369 #2767]  INFO -- default-ubuntu-1204:   7:  # All rights reserved - Do Not Redistribute
+I, [2014-01-16T14:40:16.457392 #2767]  INFO -- default-ubuntu-1204:   8:  #
+I, [2014-01-16T14:40:16.457414 #2767]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T14:40:16.457442 #2767]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T14:40:16.457477 #2767]  INFO -- default-ubuntu-1204:  11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T14:40:16.457505 #2767]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T14:40:16.457527 #2767]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T14:40:16.457549 #2767]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T14:40:16.457571 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.457801 #2767]  INFO -- default-ubuntu-1204: [0m
+I, [2014-01-16T14:40:16.457834 #2767]  INFO -- default-ubuntu-1204: [2014-01-16T20:40:16+00:00] ERROR: Running exception handlers
+I, [2014-01-16T14:40:16.458483 #2767]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:40:16.458521 #2767]  INFO -- default-ubuntu-1204: [2014-01-16T20:40:16+00:00] ERROR: Exception handlers complete
+I, [2014-01-16T14:40:16.458564 #2767]  INFO -- default-ubuntu-1204: [2014-01-16T20:40:16+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-01-16T14:40:16.458714 #2767]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T14:40:16.459046 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T14:40:16.477566 #2767]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:40:16+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T14:40:16.514151 #2767]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T14:40:16.542211 #2767] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T14:40:16.542343 #2767] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T14:40:16.542371 #2767] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T14:40:16.542392 #2767] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:40:16.542432 #2767] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T14:40:16.542458 #2767] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T14:40:16.542480 #2767] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:40:16.542501 #2767] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T14:40:16.542522 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T14:40:16.542543 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T14:40:16.542567 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T14:40:16.542588 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T14:40:16.542608 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T14:40:16.542628 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T14:40:16.542648 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T14:40:16.542668 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T14:40:16.542688 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T14:40:16.542708 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T14:40:16.542728 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T14:40:16.542748 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T14:40:16.542768 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:40:16.542788 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T14:40:16.542807 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T14:40:16.542828 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T14:40:16.542858 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T14:40:16.542880 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T14:40:16.542901 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T14:40:16.542921 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T14:40:16.542941 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T14:40:16.542960 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:40:16.542980 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T14:40:16.543000 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T14:40:16.543020 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T14:40:16.543039 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T14:40:16.543059 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T14:40:16.543079 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T14:40:16.543099 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:40:16.543118 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T14:40:16.543138 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T14:40:16.543158 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T14:40:16.543179 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T14:40:16.543199 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T14:40:16.543218 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T14:40:16.543238 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T14:40:16.543258 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T14:40:16.543277 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T14:40:16.543297 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T14:40:16.543317 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T14:40:16.543341 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T14:40:16.543363 #2767] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T14:40:16.543383 #2767] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T14:40:46.132200 #4073]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:40:46.132665 #4073]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:40:49.727433 #4073]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T14:40:51.014078 #4073]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T14:40:51.506030 #4073]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T14:40:51.510948 #4073]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.37s).
+I, [2014-01-16T14:40:51.511303 #4073]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:40:51.511571 #4073]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:40:53.761750 #4073]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T14:40:54.026394 #4073]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 80%Progress: 90%I, [2014-01-16T14:41:13.092634 #4073]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T14:41:14.106239 #4073]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T14:41:14.382778 #4073]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T14:41:14.633783 #4073]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T14:41:16.329310 #4073]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T14:41:16.624642 #4073]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T14:41:16.624886 #4073]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T14:41:16.742279 #4073]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T14:41:16.871257 #4073]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T14:41:16.941084 #4073]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T14:41:17.437012 #4073]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T14:41:17.563156 #4073]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T14:41:17.931427 #4073]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T14:41:38.192070 #4073]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T14:41:38.229448 #4073]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T14:41:43.606983 #4073]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T14:41:46.293679 #4073]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T14:41:46.295490 #4073]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m54.78s).
+I, [2014-01-16T14:41:46.295697 #4073]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T14:41:46.296891 #4073]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T14:41:46.297650 #4073]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T14:41:47.009491 #4073]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T14:41:47.010981 #4073]  INFO -- default-ubuntu-1204: Preparing data bags
+-----> Installing Chef Omnibus (true)I, [2014-01-16T14:41:47.192273 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:41:47.192394 #4073]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T14:41:47.192858 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:41:47.192937 #4073]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T14:41:47.193331 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:41:47.193421 #4073]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-01-16T14:41:47.193807 #4073]  INFO -- default-ubuntu-1204: 
+Downloading Chef  for ubuntu...I, [2014-01-16T14:41:47.392557 #4073]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T14:41:47.393563 #4073]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1103/metadata.txtI, [2014-01-16T14:41:47.393776 #4073]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:41:47.394008 #4073]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:41:47.581016 #4073]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T14:41:47.582542 #4073]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T14:41:47.583079 #4073]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T14:41:47.585437 #4073]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:41:47.586320 #4073]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1103/chef__amd64.debI, [2014-01-16T14:41:47.586624 #4073]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:41:47.586905 #4073]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T14:41:53.537557 #4073]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T14:41:53.538485 #4073]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T14:41:53.538711 #4073]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T14:41:53.584025 #4073]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T14:41:53.670758 #4073]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T14:41:53.672993 #4073]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T14:41:57.592195 #4073]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T14:41:57.608859 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:41:57.667286 #4073]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T20:41:59+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T14:41:59.742047 #4073]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T14:41:59.804026 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:41:59+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T14:41:59.804283 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:41:59+00:00] INFO: Chef-client pid: 1180I, [2014-01-16T14:41:59.804622 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T14:42:00.189603 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T14:42:00.193264 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T14:42:00.193496 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T14:42:00.193880 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] INFO: Running start handlersI, [2014-01-16T14:42:00.194189 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] INFO: Start handlers complete.I, [2014-01-16T14:42:00.194472 #4073]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T14:42:00.197784 #4073]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:42:00.204140 #4073]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:42:00.204393 #4073]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T14:42:00.204646 #4073]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:42:00.204979 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.205126 #4073]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:42:00.205389 #4073]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T14:42:00.205648 #4073]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T14:42:00.206058 #4073]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T14:42:00.206343 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.206496 #4073]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:42:00.206783 #4073]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T14:42:00.207107 #4073]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T14:42:00.207359 #4073]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T14:42:00.207683 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.207830 #4073]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:42:00.208079 #4073]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T14:42:00.208377 #4073]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T14:42:00.208689 #4073]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T14:42:00.208967 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.209113 #4073]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T14:42:00.209367 #4073]  INFO -- default-ubuntu-1204: 
+  5:  # Copyright (C) 2014 YOUR_NAMEI, [2014-01-16T14:42:00.209677 #4073]  INFO -- default-ubuntu-1204: 
+  6:  # I, [2014-01-16T14:42:00.209964 #4073]  INFO -- default-ubuntu-1204: 
+  7:  # All rights reserved - Do Not RedistributeI, [2014-01-16T14:42:00.210219 #4073]  INFO -- default-ubuntu-1204: 
+  8:  #I, [2014-01-16T14:42:00.210494 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.210852 #4073]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T14:42:00.210886 #4073]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T14:42:00.210916 #4073]  INFO -- default-ubuntu-1204:  11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T14:42:00.210940 #4073]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T14:42:00.210963 #4073]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T14:42:00.210985 #4073]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T14:42:00.211021 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.211045 #4073]  INFO -- default-ubuntu-1204: [0m
+I, [2014-01-16T14:42:00.211068 #4073]  INFO -- default-ubuntu-1204: [2014-01-16T20:42:00+00:00] ERROR: Running exception handlers
+I, [2014-01-16T14:42:00.211339 #4073]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:42:00.211544 #4073]  INFO -- default-ubuntu-1204: [2014-01-16T20:42:00+00:00] ERROR: Exception handlers complete
+I, [2014-01-16T14:42:00.211578 #4073]  INFO -- default-ubuntu-1204: [2014-01-16T20:42:00+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-01-16T14:42:00.211828 #4073]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T14:42:00.212169 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T14:42:00.228318 #4073]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:42:00+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T14:42:00.260105 #4073]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T14:42:00.283191 #4073] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T14:42:00.283324 #4073] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T14:42:00.283352 #4073] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T14:42:00.283373 #4073] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:42:00.283392 #4073] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T14:42:00.283494 #4073] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T14:42:00.283519 #4073] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:42:00.283543 #4073] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T14:42:00.283563 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T14:42:00.283588 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T14:42:00.283608 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T14:42:00.283628 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T14:42:00.283648 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T14:42:00.283668 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T14:42:00.283688 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T14:42:00.283708 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T14:42:00.283728 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T14:42:00.283748 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T14:42:00.283768 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T14:42:00.283798 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T14:42:00.283820 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:42:00.283840 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T14:42:00.283860 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T14:42:00.283880 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T14:42:00.283899 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T14:42:00.283919 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T14:42:00.283938 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T14:42:00.283958 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T14:42:00.283978 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T14:42:00.283997 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:42:00.284017 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T14:42:00.284036 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T14:42:00.284056 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T14:42:00.284075 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T14:42:00.284095 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T14:42:00.284115 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T14:42:00.284134 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:42:00.284154 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T14:42:00.284174 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T14:42:00.284194 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T14:42:00.284214 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T14:42:00.284234 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T14:42:00.284258 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T14:42:00.284280 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T14:42:00.284300 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T14:42:00.284320 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T14:42:00.284339 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T14:42:00.284359 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T14:42:00.284379 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T14:42:00.284398 #4073] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T14:42:00.284427 #4073] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T14:53:22.849251 #5763]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:53:22.849702 #5763]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:53:26.432557 #5763]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T14:53:27.765541 #5763]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T14:53:28.254938 #5763]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T14:53:28.259968 #5763]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.41s).
+I, [2014-01-16T14:53:28.260361 #5763]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:53:28.260625 #5763]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:53:30.525764 #5763]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T14:53:30.789583 #5763]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 60%Progress: 80%Progress: 90%I, [2014-01-16T14:53:50.457718 #5763]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T14:53:51.399683 #5763]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T14:53:51.644592 #5763]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T14:53:51.887027 #5763]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T14:53:53.670800 #5763]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T14:53:53.979002 #5763]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T14:53:53.979243 #5763]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T14:53:54.104790 #5763]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T14:53:54.243712 #5763]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T14:53:54.339070 #5763]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T14:53:54.825040 #5763]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T14:53:54.941864 #5763]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T14:53:55.278235 #5763]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T14:54:16.070347 #5763]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T14:54:16.104205 #5763]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T14:54:21.489144 #5763]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T14:54:24.214358 #5763]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T14:54:24.216076 #5763]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m55.95s).
+I, [2014-01-16T14:54:24.216316 #5763]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T14:54:24.217517 #5763]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T14:54:24.218264 #5763]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T14:54:24.922045 #5763]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T14:54:24.923579 #5763]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T14:54:25.104974 #5763]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T14:54:25.105123 #5763]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T14:54:25.105192 #5763]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T14:54:25.105252 #5763]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T14:54:25.299818 #5763]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T14:54:25.300721 #5763]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1113/metadata.txtI, [2014-01-16T14:54:25.300983 #5763]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:54:25.301241 #5763]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:54:25.472174 #5763]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T14:54:25.472953 #5763]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T14:54:25.473475 #5763]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T14:54:25.475366 #5763]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:54:25.476276 #5763]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1113/chef__amd64.debI, [2014-01-16T14:54:25.476579 #5763]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:54:25.476861 #5763]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T14:54:30.959571 #5763]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T14:54:30.960499 #5763]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T14:54:30.960695 #5763]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T14:54:31.008523 #5763]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T14:54:31.094282 #5763]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T14:54:31.096609 #5763]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T14:54:35.050331 #5763]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T14:54:35.071871 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:35.134293 #5763]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T20:54:37+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T14:54:37.137399 #5763]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T14:54:37.206778 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T14:54:37.207008 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Chef-client pid: 1190I, [2014-01-16T14:54:37.207228 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T14:54:37.569920 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T14:54:37.573612 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T14:54:37.573917 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T14:54:37.574265 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Running start handlersI, [2014-01-16T14:54:37.574608 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] INFO: Start handlers complete.I, [2014-01-16T14:54:37.574919 #5763]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T14:54:37.578236 #5763]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:54:37.584762 #5763]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:54:37.585040 #5763]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T14:54:37.585291 #5763]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:54:37.585567 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.585701 #5763]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:54:37.585981 #5763]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T14:54:37.586238 #5763]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T14:54:37.586515 #5763]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T14:54:37.586776 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.586944 #5763]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:54:37.587216 #5763]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T14:54:37.587490 #5763]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T14:54:37.587771 #5763]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T14:54:37.588047 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.588209 #5763]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:54:37.588490 #5763]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T14:54:37.588759 #5763]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T14:54:37.588999 #5763]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T14:54:37.589269 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.589416 #5763]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T14:54:37.589665 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.589701 #5763]  INFO -- default-ubuntu-1204:   5:  # Copyright (C) 2014 YOUR_NAME
+I, [2014-01-16T14:54:37.589737 #5763]  INFO -- default-ubuntu-1204:   6:  # 
+I, [2014-01-16T14:54:37.589763 #5763]  INFO -- default-ubuntu-1204:   7:  # All rights reserved - Do Not Redistribute
+I, [2014-01-16T14:54:37.589787 #5763]  INFO -- default-ubuntu-1204:   8:  #
+I, [2014-01-16T14:54:37.589811 #5763]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T14:54:37.589834 #5763]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T14:54:37.589859 #5763]  INFO -- default-ubuntu-1204:  11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T14:54:37.589883 #5763]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T14:54:37.589906 #5763]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T14:54:37.589945 #5763]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T14:54:37.589974 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.590225 #5763]  INFO -- default-ubuntu-1204: [0m
+[2014-01-16T20:54:37+00:00] ERROR: Running exception handlersI, [2014-01-16T14:54:37.590494 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.590531 #5763]  INFO -- default-ubuntu-1204: [2014-01-16T20:54:37+00:00] ERROR: Exception handlers complete
+I, [2014-01-16T14:54:37.590968 #5763]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:54:37.591003 #5763]  INFO -- default-ubuntu-1204: [2014-01-16T20:54:37+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-01-16T14:54:37.591124 #5763]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T14:54:37.591392 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T14:54:37.607724 #5763]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:54:37+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T14:54:37.638779 #5763]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T14:54:37.662648 #5763] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T14:54:37.662796 #5763] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T14:54:37.662825 #5763] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T14:54:37.662848 #5763] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:54:37.662870 #5763] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T14:54:37.662892 #5763] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T14:54:37.662913 #5763] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:54:37.662935 #5763] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T14:54:37.662956 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T14:54:37.662978 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T14:54:37.662999 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T14:54:37.663021 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T14:54:37.663043 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T14:54:37.663064 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T14:54:37.663098 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T14:54:37.663122 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T14:54:37.663143 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T14:54:37.663165 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T14:54:37.663187 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T14:54:37.663209 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T14:54:37.663231 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:54:37.663253 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T14:54:37.663274 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T14:54:37.663296 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T14:54:37.663317 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T14:54:37.663339 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T14:54:37.663360 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T14:54:37.663382 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T14:54:37.663403 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T14:54:37.663432 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:54:37.663456 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T14:54:37.663477 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T14:54:37.663498 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T14:54:37.663520 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T14:54:37.663541 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T14:54:37.663563 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T14:54:37.663584 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:54:37.663611 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T14:54:37.663635 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T14:54:37.663656 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T14:54:37.663678 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T14:54:37.663700 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T14:54:37.663721 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T14:54:37.663743 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T14:54:37.663764 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T14:54:37.663786 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T14:54:37.663807 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T14:54:37.663829 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T14:54:37.663851 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T14:54:37.663872 #5763] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T14:54:37.663893 #5763] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T14:54:58.153509 #7345]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:54:58.153879 #7345]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:55:01.801036 #7345]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T14:55:05.580294 #7345]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T14:55:06.075849 #7345]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T14:55:06.080662 #7345]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m7.92s).
+I, [2014-01-16T14:55:06.081018 #7345]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:55:06.081266 #7345]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:55:08.334948 #7345]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T14:55:08.595849 #7345]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 80%Progress: 90%I, [2014-01-16T14:55:28.097512 #7345]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T14:55:29.070583 #7345]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T14:55:29.261674 #7345]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T14:55:29.480306 #7345]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T14:55:31.228139 #7345]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T14:55:31.571119 #7345]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T14:55:31.571356 #7345]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T14:55:31.703506 #7345]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T14:55:31.833826 #7345]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T14:55:31.934317 #7345]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T14:55:32.424667 #7345]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T14:55:32.550951 #7345]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T14:55:32.895229 #7345]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T14:55:53.084049 #7345]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T14:55:53.119622 #7345]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T14:55:58.470569 #7345]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T14:56:01.185629 #7345]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T14:56:01.187437 #7345]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m55.10s).
+I, [2014-01-16T14:56:01.187745 #7345]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T14:56:01.188892 #7345]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T14:56:01.189664 #7345]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T14:56:01.899221 #7345]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T14:56:01.900692 #7345]  INFO -- default-ubuntu-1204: Preparing data bags
+-----> Installing Chef Omnibus (true)I, [2014-01-16T14:56:02.082074 #7345]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/install.shI, [2014-01-16T14:56:02.082616 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:02.082859 #7345]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T14:56:02.082923 #7345]  INFO -- default-ubuntu-1204: trying wget...
+I, [2014-01-16T14:56:02.083196 #7345]  INFO -- default-ubuntu-1204: 
+Downloading Chef  for ubuntu...I, [2014-01-16T14:56:02.454681 #7345]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T14:56:02.455622 #7345]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1090/metadata.txtI, [2014-01-16T14:56:02.456726 #7345]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:56:02.457051 #7345]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:56:02.662876 #7345]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T14:56:02.663291 #7345]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T14:56:02.663790 #7345]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T14:56:02.665954 #7345]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T14:56:02.666713 #7345]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1090/chef__amd64.debI, [2014-01-16T14:56:02.666947 #7345]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T14:56:02.667200 #7345]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T14:56:07.505014 #7345]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T14:56:07.506942 #7345]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T14:56:07.507366 #7345]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T14:56:07.554615 #7345]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T14:56:07.640807 #7345]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T14:56:07.643311 #7345]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T14:56:11.648220 #7345]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T14:56:11.664844 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:11.726342 #7345]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T20:56:13+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T14:56:13.761201 #7345]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T14:56:13.822340 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:13+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T14:56:13.822593 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:13+00:00] INFO: Chef-client pid: 1167I, [2014-01-16T14:56:13.822899 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T14:56:14.188619 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T14:56:14.192218 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T14:56:14.192502 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T14:56:14.192847 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] INFO: Running start handlersI, [2014-01-16T14:56:14.193291 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] INFO: Start handlers complete.I, [2014-01-16T14:56:14.193515 #7345]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T14:56:14.196676 #7345]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:56:14.203251 #7345]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:56:14.203598 #7345]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T14:56:14.203815 #7345]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T14:56:14.204039 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.204346 #7345]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:56:14.204621 #7345]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T14:56:14.204885 #7345]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T14:56:14.205174 #7345]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T14:56:14.205458 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.205615 #7345]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:56:14.205909 #7345]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T14:56:14.206187 #7345]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T14:56:14.206486 #7345]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T14:56:14.206778 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.206935 #7345]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T14:56:14.207207 #7345]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T14:56:14.207485 #7345]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T14:56:14.207765 #7345]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T14:56:14.208039 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.208192 #7345]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T14:56:14.208393 #7345]  INFO -- default-ubuntu-1204: 
+  5:  # Copyright (C) 2014 YOUR_NAMEI, [2014-01-16T14:56:14.208657 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.208692 #7345]  INFO -- default-ubuntu-1204:   6:  # 
+I, [2014-01-16T14:56:14.208718 #7345]  INFO -- default-ubuntu-1204:   7:  # All rights reserved - Do Not Redistribute
+I, [2014-01-16T14:56:14.208757 #7345]  INFO -- default-ubuntu-1204:   8:  #
+I, [2014-01-16T14:56:14.208786 #7345]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T14:56:14.208810 #7345]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T14:56:14.208834 #7345]  INFO -- default-ubuntu-1204:  11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T14:56:14.208858 #7345]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T14:56:14.208881 #7345]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T14:56:14.208905 #7345]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T14:56:14.208929 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.209157 #7345]  INFO -- default-ubuntu-1204: [0m
+I, [2014-01-16T14:56:14.209191 #7345]  INFO -- default-ubuntu-1204: [2014-01-16T20:56:14+00:00] ERROR: Running exception handlers
+I, [2014-01-16T14:56:14.209323 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.209357 #7345]  INFO -- default-ubuntu-1204: [2014-01-16T20:56:14+00:00] ERROR: Exception handlers complete
+I, [2014-01-16T14:56:14.209526 #7345]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T14:56:14.209561 #7345]  INFO -- default-ubuntu-1204: [2014-01-16T20:56:14+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-01-16T14:56:14.209728 #7345]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T14:56:14.210090 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T14:56:14.226887 #7345]  INFO -- default-ubuntu-1204: 
+[2014-01-16T20:56:14+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T14:56:14.257510 #7345]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T14:56:14.281037 #7345] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T14:56:14.281177 #7345] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T14:56:14.281205 #7345] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T14:56:14.281228 #7345] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:56:14.281249 #7345] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T14:56:14.281270 #7345] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T14:56:14.281291 #7345] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T14:56:14.281312 #7345] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T14:56:14.281333 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T14:56:14.281366 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T14:56:14.281390 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T14:56:14.281428 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T14:56:14.281455 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T14:56:14.281477 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T14:56:14.281499 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T14:56:14.281520 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T14:56:14.281542 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T14:56:14.281563 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T14:56:14.281585 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T14:56:14.281606 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T14:56:14.281627 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:56:14.281648 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T14:56:14.281670 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T14:56:14.281691 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T14:56:14.281712 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T14:56:14.281733 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T14:56:14.281754 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T14:56:14.281776 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T14:56:14.281797 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T14:56:14.281824 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:56:14.281846 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T14:56:14.281873 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T14:56:14.281897 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T14:56:14.281918 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T14:56:14.281939 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T14:56:14.281974 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T14:56:14.282002 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T14:56:14.282024 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T14:56:14.282048 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T14:56:14.282069 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T14:56:14.282089 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T14:56:14.282109 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T14:56:14.282129 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T14:56:14.282149 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T14:56:14.282168 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T14:56:14.282188 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T14:56:14.282208 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T14:56:14.282228 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T14:56:14.282248 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T14:56:14.282268 #7345] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T14:56:14.282288 #7345] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T14:58:59.335795 #9789]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:58:59.336197 #9789]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:59:02.862005 #9789]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T14:59:04.138864 #9789]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T14:59:04.620415 #9789]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T14:59:04.624660 #9789]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.28s).
+I, [2014-01-16T14:59:04.624974 #9789]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:59:04.625196 #9789]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:59:06.912038 #9789]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T14:59:07.176639 #9789]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 80%Progress: 90%I, [2014-01-16T14:59:27.691817 #9789]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T14:59:28.658626 #9789]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T14:59:28.902828 #9789]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T14:59:29.148314 #9789]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T14:59:30.909153 #9789]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T14:59:31.300141 #9789]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T14:59:31.300387 #9789]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T14:59:31.491993 #9789]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T14:59:31.631251 #9789]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T14:59:31.737187 #9789]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T14:59:32.193038 #9789]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T14:59:32.302143 #9789]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T14:59:32.566934 #9789]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T14:59:52.801338 #9789]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T14:59:52.838468 #9789]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T15:00:02.105394 #9789]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T15:00:04.811730 #9789]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T15:00:04.813511 #9789]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (1m0.19s).
+I, [2014-01-16T15:00:04.813752 #9789]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:00:04.814924 #9789]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T15:00:04.815698 #9789]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:00:05.533232 #9789]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T15:00:05.534773 #9789]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T15:00:05.712967 #9789]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T15:00:05.713115 #9789]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T15:00:05.713185 #9789]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T15:00:05.713245 #9789]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T15:00:05.898467 #9789]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T15:00:05.899396 #9789]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1107/metadata.txtI, [2014-01-16T15:00:05.899709 #9789]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:00:05.899976 #9789]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:00:06.054303 #9789]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T15:00:06.054914 #9789]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T15:00:06.055273 #9789]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T15:00:06.057308 #9789]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:00:06.058292 #9789]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1107/chef__amd64.debI, [2014-01-16T15:00:06.058641 #9789]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:00:06.058924 #9789]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T15:00:09.536639 #9789]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T15:00:09.537645 #9789]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T15:00:09.537888 #9789]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T15:00:09.581735 #9789]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T15:00:09.667462 #9789]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T15:00:09.669649 #9789]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T15:00:13.718382 #9789]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T15:00:13.738307 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:13.795299 #9789]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T21:00:15+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T15:00:15.835964 #9789]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T15:00:15.895261 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:15+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T15:00:15.895620 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:15+00:00] INFO: Chef-client pid: 1184I, [2014-01-16T15:00:15.895814 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T15:00:16.268946 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T15:00:16.272670 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T15:00:16.272935 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T15:00:16.273328 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] INFO: Running start handlersI, [2014-01-16T15:00:16.273633 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] INFO: Start handlers complete.I, [2014-01-16T15:00:16.274013 #9789]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T15:00:16.277192 #9789]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:00:16.283597 #9789]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:00:16.283842 #9789]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T15:00:16.284060 #9789]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:00:16.284423 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.284547 #9789]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:00:16.284797 #9789]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T15:00:16.285041 #9789]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T15:00:16.285282 #9789]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T15:00:16.285544 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.285689 #9789]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:00:16.285939 #9789]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T15:00:16.286180 #9789]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T15:00:16.286431 #9789]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T15:00:16.286673 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.286809 #9789]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:00:16.287052 #9789]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T15:00:16.287287 #9789]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T15:00:16.287552 #9789]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T15:00:16.287789 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.287935 #9789]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T15:00:16.288177 #9789]  INFO -- default-ubuntu-1204: 
+  5:  # Copyright (C) 2014 YOUR_NAMEI, [2014-01-16T15:00:16.288434 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.288565 #9789]  INFO -- default-ubuntu-1204:   6:  # 
+I, [2014-01-16T15:00:16.288599 #9789]  INFO -- default-ubuntu-1204:   7:  # All rights reserved - Do Not Redistribute
+I, [2014-01-16T15:00:16.288631 #9789]  INFO -- default-ubuntu-1204:   8:  #
+I, [2014-01-16T15:00:16.288656 #9789]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T15:00:16.288680 #9789]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T15:00:16.288704 #9789]  INFO -- default-ubuntu-1204:  11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T15:00:16.288728 #9789]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T15:00:16.288752 #9789]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T15:00:16.288941 #9789]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T15:00:16.288975 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.289000 #9789]  INFO -- default-ubuntu-1204: [0m
+I, [2014-01-16T15:00:16.289025 #9789]  INFO -- default-ubuntu-1204: [2014-01-16T21:00:16+00:00] ERROR: Running exception handlers
+I, [2014-01-16T15:00:16.289190 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] ERROR: Exception handlers completeI, [2014-01-16T15:00:16.289858 #9789]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:00:16.289897 #9789]  INFO -- default-ubuntu-1204: [2014-01-16T21:00:16+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2014-01-16T15:00:16.290035 #9789]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T15:00:16.290297 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T15:00:16.306876 #9789]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:00:16+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T15:00:16.339569 #9789]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T15:00:16.363674 #9789] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T15:00:16.363808 #9789] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T15:00:16.363836 #9789] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T15:00:16.363869 #9789] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:00:16.363895 #9789] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T15:00:16.363917 #9789] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T15:00:16.363938 #9789] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:00:16.363958 #9789] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T15:00:16.363978 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T15:00:16.363998 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T15:00:16.364019 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T15:00:16.364039 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T15:00:16.364060 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T15:00:16.364080 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T15:00:16.364101 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T15:00:16.364121 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T15:00:16.364142 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T15:00:16.364162 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T15:00:16.364182 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T15:00:16.364202 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T15:00:16.364222 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:00:16.364242 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T15:00:16.364263 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T15:00:16.364283 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T15:00:16.364303 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T15:00:16.364323 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T15:00:16.364349 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T15:00:16.364385 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T15:00:16.364419 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T15:00:16.364447 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:00:16.364468 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T15:00:16.364489 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T15:00:16.364509 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T15:00:16.364529 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T15:00:16.364549 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T15:00:16.364570 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T15:00:16.364590 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:00:16.364610 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T15:00:16.364635 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T15:00:16.364656 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T15:00:16.364676 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T15:00:16.364696 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T15:00:16.364717 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T15:00:16.364737 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T15:00:16.364758 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T15:00:16.364778 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T15:00:16.364798 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T15:00:16.364818 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T15:00:16.364838 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T15:00:16.364858 #9789] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T15:00:16.364878 #9789] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T15:01:22.608021 #11563]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:01:22.608396 #11563]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:01:26.183607 #11563]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T15:01:27.499763 #11563]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T15:01:28.008737 #11563]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T15:01:28.013519 #11563]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.40s).
+I, [2014-01-16T15:01:28.013805 #11563]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:01:28.013988 #11563]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:01:30.370912 #11563]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T15:01:30.637238 #11563]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 50%Progress: 80%Progress: 90%I, [2014-01-16T15:01:49.981151 #11563]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T15:01:50.911978 #11563]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T15:01:51.118178 #11563]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T15:01:51.347990 #11563]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T15:01:53.147235 #11563]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T15:01:53.400690 #11563]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T15:01:53.400923 #11563]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T15:01:53.526937 #11563]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T15:01:53.646790 #11563]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T15:01:53.749033 #11563]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T15:01:54.254010 #11563]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T15:01:54.372605 #11563]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T15:01:54.681853 #11563]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T15:02:14.811300 #11563]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T15:02:14.847843 #11563]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T15:02:23.867970 #11563]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T15:02:26.620029 #11563]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T15:02:26.621965 #11563]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m58.61s).
+I, [2014-01-16T15:02:26.622168 #11563]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:02:26.623326 #11563]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T15:02:26.624500 #11563]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:02:27.346528 #11563]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T15:02:27.348150 #11563]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T15:02:27.501799 #11563]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T15:02:27.501878 #11563]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T15:02:27.501917 #11563]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T15:02:27.501948 #11563]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T15:02:27.655046 #11563]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T15:02:27.656071 #11563]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1113/metadata.txtI, [2014-01-16T15:02:27.656435 #11563]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:02:27.656817 #11563]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:02:27.801393 #11563]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T15:02:27.801911 #11563]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T15:02:27.802340 #11563]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T15:02:27.804445 #11563]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:02:27.805328 #11563]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1113/chef__amd64.debI, [2014-01-16T15:02:27.805606 #11563]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:02:27.805994 #11563]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:02:29.926970 #13131]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:02:29.927341 #13131]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:02:33.361809 #13131]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+E, [2014-01-16T15:02:33.814191 #11563] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T15:02:33.814572 #11563] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T15:02:33.814643 #11563] ERROR -- default-ubuntu-1204: Class: IOError
+E, [2014-01-16T15:02:33.814697 #11563] ERROR -- default-ubuntu-1204: Message: closed stream
+E, [2014-01-16T15:02:33.814748 #11563] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T15:02:33.814806 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2014-01-16T15:02:33.814859 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2014-01-16T15:02:33.814910 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/packet_stream.rb:73:in `available_for_read?'
+E, [2014-01-16T15:02:33.814960 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/packet_stream.rb:85:in `next_packet'
+E, [2014-01-16T15:02:33.815011 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/session.rb:172:in `block in poll_message'
+E, [2014-01-16T15:02:33.815062 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/session.rb:167:in `loop'
+E, [2014-01-16T15:02:33.815113 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/session.rb:167:in `poll_message'
+E, [2014-01-16T15:02:33.815164 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:460:in `dispatch_incoming_packets'
+E, [2014-01-16T15:02:33.815214 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:221:in `preprocess'
+E, [2014-01-16T15:02:33.815282 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:205:in `process'
+E, [2014-01-16T15:02:33.815338 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2014-01-16T15:02:33.815389 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2014-01-16T15:02:33.815480 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2014-01-16T15:02:33.815537 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:164:in `exec_with_exit'
+E, [2014-01-16T15:02:33.815590 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:54:in `exec'
+E, [2014-01-16T15:02:33.815641 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:109:in `run_remote'
+E, [2014-01-16T15:02:33.815691 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:43:in `block in converge'
+E, [2014-01-16T15:02:33.815747 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T15:02:33.815801 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T15:02:33.815852 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T15:02:33.815903 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T15:02:33.815953 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T15:02:33.816004 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T15:02:33.816054 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T15:02:33.816105 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T15:02:33.816155 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T15:02:33.816207 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:02:33.816258 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T15:02:33.816309 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T15:02:33.816359 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T15:02:33.816429 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T15:02:33.816511 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T15:02:33.816568 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T15:02:33.816619 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T15:02:33.816670 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T15:02:33.816720 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:02:33.816771 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T15:02:33.816822 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T15:02:33.816872 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T15:02:33.816922 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T15:02:33.816972 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T15:02:33.817022 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T15:02:33.817072 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:02:33.817122 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T15:02:33.817173 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T15:02:33.817223 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T15:02:33.817273 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T15:02:33.817323 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T15:02:33.817373 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T15:02:33.817485 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T15:02:33.817556 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T15:02:33.817609 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T15:02:33.817659 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T15:02:33.817710 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T15:02:33.817774 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T15:02:33.817829 #11563] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T15:02:33.817880 #11563] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T15:02:35.058412 #13131]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T15:02:35.520204 #13131]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T15:02:35.523794 #13131]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.59s).
+I, [2014-01-16T15:02:35.524160 #13131]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:02:35.524439 #13131]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:02:37.842693 #13131]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T15:02:38.108685 #13131]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 80%Progress: 90%I, [2014-01-16T15:02:57.285325 #13131]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T15:02:58.241403 #13131]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T15:02:58.468152 #13131]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T15:02:58.701582 #13131]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T15:02:59.864526 #13131]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T15:03:00.056006 #13131]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T15:03:00.056139 #13131]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T15:03:00.148269 #13131]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T15:03:00.234329 #13131]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T15:03:00.287049 #13131]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T15:03:00.756121 #13131]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T15:03:00.923806 #13131]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T15:03:01.245282 #13131]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T15:03:05.130292 #14268]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:03:05.130430 #14268]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:03:05.131872 #14268]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m0.00s).
+I, [2014-01-16T15:03:05.132035 #14268]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:03:05.132128 #14268]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:03:07.532221 #14268]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T15:03:08.105589 #14268]  INFO -- default-ubuntu-1204: [default] VirtualBox VM is already running.
+I, [2014-01-16T15:03:10.774480 #14268]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T15:03:10.776323 #14268]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m5.64s).
+I, [2014-01-16T15:03:10.776522 #14268]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:03:10.777618 #14268]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T15:03:10.778233 #14268]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:03:11.503699 #14268]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T15:03:11.505134 #14268]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T15:03:11.694836 #14268]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T15:03:11.694938 #14268]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T15:03:11.694971 #14268]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T15:03:11.695001 #14268]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T15:03:11.876151 #14268]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T15:03:11.877219 #14268]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.874/metadata.txtI, [2014-01-16T15:03:11.877535 #14268]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:03:11.877942 #14268]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:03:12.056366 #14268]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T15:03:12.057818 #14268]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T15:03:12.059252 #14268]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T15:03:12.063554 #14268]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:03:12.064387 #14268]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.874/chef__amd64.debI, [2014-01-16T15:03:12.064659 #14268]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:03:12.064896 #14268]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T15:03:16.666381 #14268]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T15:03:16.667258 #14268]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T15:03:16.667497 #14268]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T15:03:16.713749 #14268]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T15:03:16.798805 #14268]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../install.sh.874/chef__amd64.deb) ...I, [2014-01-16T15:03:16.800975 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:20.465801 #13131]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T15:03:20.534174 #13131]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T15:03:20.776653 #14268]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T15:03:20.796120 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:20.855380 #14268]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T21:03:23+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T15:03:23.017753 #14268]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T15:03:23.102293 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T15:03:23.105905 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: Chef-client pid: 1019I, [2014-01-16T15:03:23.106859 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:28.804355 #13131]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+[2014-01-16T21:03:23+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T15:03:29.848219 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T15:03:29.848582 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T15:03:29.848760 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T15:03:29.848934 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: Running start handlersI, [2014-01-16T15:03:29.849108 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] INFO: Start handlers complete.I, [2014-01-16T15:03:29.849281 #14268]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T15:03:29.849463 #14268]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:29.849636 #14268]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:03:29.849826 #14268]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T15:03:29.850008 #14268]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:03:29.850183 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:29.850291 #14268]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:29.850514 #14268]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T15:03:29.850708 #14268]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T15:03:29.850881 #14268]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T15:03:29.851057 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:29.851167 #14268]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:29.851350 #14268]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T15:03:29.851622 #14268]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T15:03:29.851806 #14268]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T15:03:29.851981 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:29.852086 #14268]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:29.852261 #14268]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T15:03:29.852451 #14268]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T15:03:29.852628 #14268]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T15:03:29.852806 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:29.852919 #14268]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T15:03:29.853091 #14268]  INFO -- default-ubuntu-1204: 
+  5:  # Copyright (C) 2014 YOUR_NAMEI, [2014-01-16T15:03:29.853265 #14268]  INFO -- default-ubuntu-1204: 
+  6:  # I, [2014-01-16T15:03:29.853454 #14268]  INFO -- default-ubuntu-1204: 
+  7:  # All rights reserved - Do Not RedistributeI, [2014-01-16T15:03:29.853649 #14268]  INFO -- default-ubuntu-1204: 
+  8:  #I, [2014-01-16T15:03:29.853828 #14268]  INFO -- default-ubuntu-1204: 
+  9:  #I, [2014-01-16T15:03:29.854015 #14268]  INFO -- default-ubuntu-1204: 
+ 10:  I, [2014-01-16T15:03:29.854189 #14268]  INFO -- default-ubuntu-1204: 
+ 11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]I, [2014-01-16T15:03:29.854364 #14268]  INFO -- default-ubuntu-1204: 
+ 12:  I, [2014-01-16T15:03:29.854652 #14268]  INFO -- default-ubuntu-1204: 
+ 13:  include_recipe "hostname"I, [2014-01-16T15:03:29.854826 #14268]  INFO -- default-ubuntu-1204: 
+ 14:  [0mI, [2014-01-16T15:03:29.855003 #14268]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:29.855115 #14268]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:29.855286 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] ERROR: Running exception handlersI, [2014-01-16T15:03:29.855580 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] ERROR: Exception handlers completeI, [2014-01-16T15:03:29.855755 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-01-16T15:03:29.855930 #14268]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T15:03:29.856112 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T15:03:29.856291 #14268]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:23+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T15:03:29.856482 #14268]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T15:03:29.858453 #14268] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T15:03:29.858555 #14268] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T15:03:29.858581 #14268] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T15:03:29.858603 #14268] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:03:29.858623 #14268] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T15:03:29.858642 #14268] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T15:03:29.858662 #14268] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:03:29.858682 #14268] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T15:03:29.858702 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T15:03:29.858722 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T15:03:29.858742 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T15:03:29.858761 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T15:03:29.858786 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T15:03:29.858808 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T15:03:29.858829 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T15:03:29.858854 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T15:03:29.858875 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T15:03:29.858895 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T15:03:29.858921 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T15:03:29.858944 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T15:03:29.858964 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:03:29.858983 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T15:03:29.859003 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T15:03:29.859022 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T15:03:29.859041 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T15:03:29.859061 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T15:03:29.859081 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T15:03:29.859100 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T15:03:29.859120 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T15:03:29.859139 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:03:29.859159 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T15:03:29.859178 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T15:03:29.859198 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T15:03:29.859218 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T15:03:29.859238 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T15:03:29.859257 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T15:03:29.859277 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:03:29.859296 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T15:03:29.859320 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T15:03:29.859341 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T15:03:29.859368 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T15:03:29.859391 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T15:03:29.859423 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T15:03:29.859449 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T15:03:29.859472 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T15:03:29.859492 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T15:03:29.859513 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T15:03:29.859534 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T15:03:29.859558 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T15:03:29.859578 #14268] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T15:03:29.859597 #14268] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T15:03:31.554826 #13131]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T15:03:31.556660 #13131]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m56.03s).
+I, [2014-01-16T15:03:31.556929 #13131]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:03:31.558176 #13131]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T15:03:31.558965 #13131]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:03:33.239256 #13131]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T15:03:33.240729 #13131]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T15:03:33.456275 #13131]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T21:03:35+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T15:03:35.357032 #13131]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T15:03:35.397767 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T15:03:35.398147 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Chef-client pid: 1310I, [2014-01-16T15:03:35.398499 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T15:03:35.718513 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T15:03:35.722283 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T15:03:35.722765 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T15:03:35.723217 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Running start handlersI, [2014-01-16T15:03:35.723825 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] INFO: Start handlers complete.I, [2014-01-16T15:03:35.724444 #13131]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T15:03:35.727706 #13131]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:35.734304 #13131]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:03:35.734740 #13131]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T15:03:35.735044 #13131]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:03:35.735347 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.735557 #13131]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:35.735857 #13131]  INFO -- default-ubuntu-1204: 
+NameError[0mI, [2014-01-16T15:03:35.736140 #13131]  INFO -- default-ubuntu-1204: 
+---------[0mI, [2014-01-16T15:03:35.736524 #13131]  INFO -- default-ubuntu-1204: 
+Cannot find a resource for set_fqdn on ubuntu version 12.04[0mI, [2014-01-16T15:03:35.736803 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.736951 #13131]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:35.737211 #13131]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T15:03:35.737514 #13131]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T15:03:35.760781 #13131]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T15:03:35.761346 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.761479 #13131]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:03:35.761696 #13131]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T15:03:35.761902 #13131]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T15:03:35.762107 #13131]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T15:03:35.762314 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.762452 #13131]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T15:03:35.762658 #13131]  INFO -- default-ubuntu-1204: 
+  5:  # Copyright (C) 2014 YOUR_NAMEI, [2014-01-16T15:03:35.762875 #13131]  INFO -- default-ubuntu-1204: 
+  6:  # I, [2014-01-16T15:03:35.763089 #13131]  INFO -- default-ubuntu-1204: 
+  7:  # All rights reserved - Do Not RedistributeI, [2014-01-16T15:03:35.763300 #13131]  INFO -- default-ubuntu-1204: 
+  8:  #I, [2014-01-16T15:03:35.763519 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.763553 #13131]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T15:03:35.763578 #13131]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T15:03:35.763606 #13131]  INFO -- default-ubuntu-1204:  11>> node.override[set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T15:03:35.763629 #13131]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T15:03:35.763651 #13131]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T15:03:35.763674 #13131]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T15:03:35.763695 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.763717 #13131]  INFO -- default-ubuntu-1204: [0m
+I, [2014-01-16T15:03:35.763987 #13131]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:03:35.764021 #13131]  INFO -- default-ubuntu-1204: [2014-01-16T21:03:35+00:00] ERROR: Running exception handlers
+I, [2014-01-16T15:03:35.764183 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] ERROR: Exception handlers completeI, [2014-01-16T15:03:35.764460 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-01-16T15:03:35.764670 #13131]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T15:03:35.764873 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] ERROR: Cannot find a resource for set_fqdn on ubuntu version 12.04I, [2014-01-16T15:03:35.765076 #13131]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:03:35+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T15:03:35.787575 #13131]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T15:03:35.810325 #13131] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T15:03:35.810505 #13131] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T15:03:35.810536 #13131] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T15:03:35.810559 #13131] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:03:35.810581 #13131] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T15:03:35.810602 #13131] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T15:03:35.810624 #13131] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:03:35.810645 #13131] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T15:03:35.810666 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T15:03:35.810688 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T15:03:35.810709 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T15:03:35.810730 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T15:03:35.810752 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T15:03:35.810773 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T15:03:35.810795 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T15:03:35.810816 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T15:03:35.810837 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T15:03:35.810859 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T15:03:35.810880 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T15:03:35.810901 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T15:03:35.810923 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:03:35.810944 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T15:03:35.810966 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T15:03:35.810987 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T15:03:35.811009 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T15:03:35.811041 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T15:03:35.811065 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T15:03:35.811088 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T15:03:35.811110 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T15:03:35.811131 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:03:35.811153 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T15:03:35.811174 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T15:03:35.811196 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T15:03:35.811218 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T15:03:35.811239 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T15:03:35.811261 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T15:03:35.811282 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:03:35.811303 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T15:03:35.811324 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T15:03:35.811345 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T15:03:35.811366 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T15:03:35.811388 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T15:03:35.811409 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T15:03:35.811431 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T15:03:35.811480 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T15:03:35.811508 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T15:03:35.811531 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/bin/kitchen:23:in `load'
+E, [2014-01-16T15:03:35.811553 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/bin/kitchen:23:in `<main>'
+E, [2014-01-16T15:03:35.811580 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T15:03:35.811604 #13131] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@chef/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T15:03:35.811625 #13131] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T15:04:53.957908 #14977]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:04:53.958292 #14977]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:04:57.584298 #14977]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T15:04:58.974434 #14977]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T15:04:59.445543 #14977]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T15:04:59.450539 #14977]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.49s).
+I, [2014-01-16T15:04:59.450900 #14977]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:04:59.451140 #14977]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:05:01.700679 #14977]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T15:05:01.969675 #14977]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 80%Progress: 90%I, [2014-01-16T15:05:21.213765 #14977]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T15:05:22.191846 #14977]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T15:05:22.439877 #14977]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T15:05:22.648204 #14977]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T15:05:24.361225 #14977]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T15:05:24.664073 #14977]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T15:05:24.664307 #14977]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T15:05:24.799039 #14977]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T15:05:24.920880 #14977]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T15:05:25.011728 #14977]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T15:05:25.544910 #14977]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T15:05:25.662262 #14977]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T15:05:25.996563 #14977]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T15:05:45.739328 #14977]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T15:05:45.777333 #14977]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T15:05:51.184640 #14977]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T15:05:54.014521 #14977]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T15:05:54.016258 #14977]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m54.56s).
+I, [2014-01-16T15:05:54.016511 #14977]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:05:54.017642 #14977]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T15:05:54.018378 #14977]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:05:54.731701 #14977]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T15:05:54.733106 #14977]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T15:05:54.910899 #14977]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T15:05:54.911047 #14977]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T15:05:54.911113 #14977]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T15:05:54.911171 #14977]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T15:05:55.060781 #14977]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T15:05:55.061673 #14977]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1081/metadata.txtI, [2014-01-16T15:05:55.061899 #14977]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:05:55.062220 #14977]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:05:55.209007 #14977]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T15:05:55.210264 #14977]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T15:05:55.211518 #14977]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T15:05:55.214323 #14977]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:05:55.215142 #14977]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1081/chef__amd64.debI, [2014-01-16T15:05:55.215436 #14977]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:05:55.215717 #14977]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T15:05:59.584885 #14977]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T15:05:59.585977 #14977]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T15:05:59.586289 #14977]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T15:05:59.627253 #14977]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T15:05:59.704696 #14977]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T15:05:59.707239 #14977]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T15:06:03.888361 #14977]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T15:06:03.909151 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:03.971285 #14977]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T21:06:06+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T15:06:06.056973 #14977]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T15:06:06.119291 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T15:06:06.119627 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Chef-client pid: 1158I, [2014-01-16T15:06:06.119831 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T15:06:06.436696 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T15:06:06.440152 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T15:06:06.440364 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T15:06:06.440737 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Running start handlersI, [2014-01-16T15:06:06.441096 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] INFO: Start handlers complete.I, [2014-01-16T15:06:06.441303 #14977]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T15:06:06.444088 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] ERROR: Failed to load data bag item: "host" "network"I, [2014-01-16T15:06:06.447852 #14977]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:06:06.448554 #14977]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:06:06.448985 #14977]  INFO -- default-ubuntu-1204: 
+[31mRecipe Compile Error in /tmp/kitchen/cookbooks/bowser/recipes/default.rb[0mI, [2014-01-16T15:06:06.449292 #14977]  INFO -- default-ubuntu-1204: 
+================================================================================[0mI, [2014-01-16T15:06:06.449653 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.449824 #14977]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:06:06.450110 #14977]  INFO -- default-ubuntu-1204: 
+Yajl::ParseError[0mI, [2014-01-16T15:06:06.450423 #14977]  INFO -- default-ubuntu-1204: 
+----------------[0mI, [2014-01-16T15:06:06.450714 #14977]  INFO -- default-ubuntu-1204: 
+parse error: invalid object key (must be a string)I, [2014-01-16T15:06:06.451000 #14977]  INFO -- default-ubuntu-1204: 
+           "hostname": "userhostname", } I, [2014-01-16T15:06:06.451293 #14977]  INFO -- default-ubuntu-1204: 
+                     (right here) ------^I, [2014-01-16T15:06:06.451579 #14977]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:06:06.451829 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.451976 #14977]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:06:06.452223 #14977]  INFO -- default-ubuntu-1204: 
+Cookbook Trace:[0mI, [2014-01-16T15:06:06.452496 #14977]  INFO -- default-ubuntu-1204: 
+---------------[0mI, [2014-01-16T15:06:06.452739 #14977]  INFO -- default-ubuntu-1204: 
+  /tmp/kitchen/cookbooks/bowser/recipes/default.rb:11:in `from_file'[0mI, [2014-01-16T15:06:06.452971 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.453106 #14977]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:06:06.453336 #14977]  INFO -- default-ubuntu-1204: 
+Relevant File Content:[0mI, [2014-01-16T15:06:06.453574 #14977]  INFO -- default-ubuntu-1204: 
+----------------------[0mI, [2014-01-16T15:06:06.453879 #14977]  INFO -- default-ubuntu-1204: 
+/tmp/kitchen/cookbooks/bowser/recipes/default.rb:I, [2014-01-16T15:06:06.454113 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.454254 #14977]  INFO -- default-ubuntu-1204: 
+  4:  #I, [2014-01-16T15:06:06.454486 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.454521 #14977]  INFO -- default-ubuntu-1204:   5:  # Copyright (C) 2014 YOUR_NAME
+I, [2014-01-16T15:06:06.454547 #14977]  INFO -- default-ubuntu-1204:   6:  # 
+I, [2014-01-16T15:06:06.454570 #14977]  INFO -- default-ubuntu-1204:   7:  # All rights reserved - Do Not Redistribute
+I, [2014-01-16T15:06:06.454594 #14977]  INFO -- default-ubuntu-1204:   8:  #
+I, [2014-01-16T15:06:06.454617 #14977]  INFO -- default-ubuntu-1204:   9:  #
+I, [2014-01-16T15:06:06.454640 #14977]  INFO -- default-ubuntu-1204:  10:  
+I, [2014-01-16T15:06:06.454663 #14977]  INFO -- default-ubuntu-1204:  11>> node.override[:set_fqdn] = data_bag_item('host', 'network')["hostname"]
+I, [2014-01-16T15:06:06.454696 #14977]  INFO -- default-ubuntu-1204:  12:  
+I, [2014-01-16T15:06:06.454721 #14977]  INFO -- default-ubuntu-1204:  13:  include_recipe "hostname"
+I, [2014-01-16T15:06:06.454744 #14977]  INFO -- default-ubuntu-1204:  14:  [0m
+I, [2014-01-16T15:06:06.454965 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.455108 #14977]  INFO -- default-ubuntu-1204: [0m
+I, [2014-01-16T15:06:06.455142 #14977]  INFO -- default-ubuntu-1204: [2014-01-16T21:06:06+00:00] ERROR: Running exception handlers
+I, [2014-01-16T15:06:06.455291 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.455325 #14977]  INFO -- default-ubuntu-1204: [2014-01-16T21:06:06+00:00] ERROR: Exception handlers complete
+I, [2014-01-16T15:06:06.455473 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-01-16T15:06:06.455905 #14977]  INFO -- default-ubuntu-1204: 
+Chef Client failed. 0 resources updated[0mI, [2014-01-16T15:06:06.456227 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] ERROR: parse error: invalid object key (must be a string)I, [2014-01-16T15:06:06.472090 #14977]  INFO -- default-ubuntu-1204: 
+           "hostname": "userhostname", } I, [2014-01-16T15:06:06.472371 #14977]  INFO -- default-ubuntu-1204: 
+                     (right here) ------^I, [2014-01-16T15:06:06.472592 #14977]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:06:06.472713 #14977]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:06:06+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)I, [2014-01-16T15:06:06.501134 #14977]  INFO -- default-ubuntu-1204: 
+E, [2014-01-16T15:06:06.522346 #14977] ERROR -- default-ubuntu-1204: Converge failed on instance <default-ubuntu-1204>.
+E, [2014-01-16T15:06:06.522642 #14977] ERROR -- default-ubuntu-1204: ------Exception-------
+E, [2014-01-16T15:06:06.522714 #14977] ERROR -- default-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-01-16T15:06:06.522768 #14977] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:06:06.522819 #14977] ERROR -- default-ubuntu-1204: ---Nested Exception---
+E, [2014-01-16T15:06:06.522869 #14977] ERROR -- default-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-01-16T15:06:06.522919 #14977] ERROR -- default-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-01-16T15:06:06.522969 #14977] ERROR -- default-ubuntu-1204: ------Backtrace-------
+E, [2014-01-16T15:06:06.523018 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:111:in `rescue in run_remote'
+E, [2014-01-16T15:06:06.523069 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:107:in `run_remote'
+E, [2014-01-16T15:06:06.523119 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2014-01-16T15:06:06.523170 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T15:06:06.523221 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T15:06:06.523272 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T15:06:06.523323 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T15:06:06.523374 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T15:06:06.523503 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T15:06:06.523562 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T15:06:06.523615 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T15:06:06.523666 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T15:06:06.523716 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:06:06.523767 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T15:06:06.523817 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T15:06:06.523867 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T15:06:06.523917 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T15:06:06.523967 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T15:06:06.524017 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T15:06:06.524067 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T15:06:06.524117 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T15:06:06.524167 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:06:06.524218 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T15:06:06.524269 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T15:06:06.524319 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T15:06:06.524370 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T15:06:06.524420 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T15:06:06.524471 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T15:06:06.524536 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:06:06.524566 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T15:06:06.524621 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T15:06:06.524677 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T15:06:06.524729 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T15:06:06.524787 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T15:06:06.524854 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T15:06:06.524906 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T15:06:06.524957 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T15:06:06.525007 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T15:06:06.525057 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T15:06:06.525108 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T15:06:06.525158 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T15:06:06.525209 #14977] ERROR -- default-ubuntu-1204: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T15:06:06.525258 #14977] ERROR -- default-ubuntu-1204: ----------------------
+I, [2014-01-16T15:07:35.875736 #16642]  INFO -- default-ubuntu-1204: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:07:35.876114 #16642]  INFO -- default-ubuntu-1204: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:07:39.469474 #16642]  INFO -- default-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-01-16T15:07:40.779942 #16642]  INFO -- default-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-01-16T15:07:41.219334 #16642]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> destroyed.
+I, [2014-01-16T15:07:41.224002 #16642]  INFO -- default-ubuntu-1204: Finished destroying <default-ubuntu-1204> (0m5.34s).
+I, [2014-01-16T15:07:41.532772 #16642]  INFO -- default-ubuntu-1204: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:07:41.532888 #16642]  INFO -- default-ubuntu-1204: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:07:43.864660 #16642]  INFO -- default-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T15:07:44.137969 #16642]  INFO -- default-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 10%Progress: 20%Progress: 30%Progress: 40%Progress: 50%Progress: 80%Progress: 90%I, [2014-01-16T15:08:04.021105 #16642]  INFO -- default-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T15:08:04.964770 #16642]  INFO -- default-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-01-16T15:08:05.181314 #16642]  INFO -- default-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T15:08:05.406397 #16642]  INFO -- default-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T15:08:07.111208 #16642]  INFO -- default-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2014-01-16T15:08:07.404880 #16642]  INFO -- default-ubuntu-1204: [default] Creating shared folders metadata...
+I, [2014-01-16T15:08:07.405125 #16642]  INFO -- default-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T15:08:07.530825 #16642]  INFO -- default-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T15:08:07.677707 #16642]  INFO -- default-ubuntu-1204: [default] Forwarding ports...
+I, [2014-01-16T15:08:07.776640 #16642]  INFO -- default-ubuntu-1204: [default] -- 22 => 2201 (adapter 1)
+I, [2014-01-16T15:08:08.301621 #16642]  INFO -- default-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T15:08:08.427487 #16642]  INFO -- default-ubuntu-1204: [default] Booting VM...
+I, [2014-01-16T15:08:08.754100 #16642]  INFO -- default-ubuntu-1204: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T15:08:29.332462 #16642]  INFO -- default-ubuntu-1204: [default] VM booted and ready for use!
+I, [2014-01-16T15:08:29.375544 #16642]  INFO -- default-ubuntu-1204: [default] Setting hostname...
+I, [2014-01-16T15:08:34.565089 #16642]  INFO -- default-ubuntu-1204: [default] Mounting shared folders...
+I, [2014-01-16T15:08:37.412342 #16642]  INFO -- default-ubuntu-1204: Vagrant instance <default-ubuntu-1204> created.
+I, [2014-01-16T15:08:37.414172 #16642]  INFO -- default-ubuntu-1204: Finished creating <default-ubuntu-1204> (0m55.88s).
+I, [2014-01-16T15:08:37.414385 #16642]  INFO -- default-ubuntu-1204: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:08:37.415644 #16642]  INFO -- default-ubuntu-1204: Preparing files for transfer
+I, [2014-01-16T15:08:37.416355 #16642]  INFO -- default-ubuntu-1204: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:08:38.130298 #16642]  INFO -- default-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-01-16T15:08:38.131815 #16642]  INFO -- default-ubuntu-1204: Preparing data bags
+I, [2014-01-16T15:08:38.311729 #16642]  INFO -- default-ubuntu-1204: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T15:08:38.311821 #16642]  INFO -- default-ubuntu-1204: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T15:08:38.311854 #16642]  INFO -- default-ubuntu-1204:   to file /tmp/install.sh
+I, [2014-01-16T15:08:38.311882 #16642]  INFO -- default-ubuntu-1204: trying wget...
+Downloading Chef  for ubuntu...I, [2014-01-16T15:08:38.452297 #16642]  INFO -- default-ubuntu-1204: 
+downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=12.04&m=x86_64I, [2014-01-16T15:08:38.453256 #16642]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1111/metadata.txtI, [2014-01-16T15:08:38.453467 #16642]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:08:38.453838 #16642]  INFO -- default-ubuntu-1204: 
+url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:08:38.632033 #16642]  INFO -- default-ubuntu-1204: 
+md5	3d3b3662830a44eeec71aadc098a4018I, [2014-01-16T15:08:38.632912 #16642]  INFO -- default-ubuntu-1204: 
+sha256	a5b00a24e68e29a01c7ab9de5cdaf0cc9fd1c889599ad9af70293e5b4de8615cI, [2014-01-16T15:08:38.633382 #16642]  INFO -- default-ubuntu-1204: 
+downloaded metadata file looks valid...I, [2014-01-16T15:08:38.635790 #16642]  INFO -- default-ubuntu-1204: 
+downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef_11.8.2-1.ubuntu.12.04_amd64.debI, [2014-01-16T15:08:38.636840 #16642]  INFO -- default-ubuntu-1204: 
+  to file /tmp/install.sh.1111/chef__amd64.debI, [2014-01-16T15:08:38.637131 #16642]  INFO -- default-ubuntu-1204: 
+trying wget...I, [2014-01-16T15:08:38.637389 #16642]  INFO -- default-ubuntu-1204: 
+Checksum compare with sha256sum succeeded.I, [2014-01-16T15:08:43.648684 #16642]  INFO -- default-ubuntu-1204: 
+Installing Chef I, [2014-01-16T15:08:43.649520 #16642]  INFO -- default-ubuntu-1204: 
+installing with dpkg...I, [2014-01-16T15:08:43.649756 #16642]  INFO -- default-ubuntu-1204: 
+Selecting previously unselected package chef.I, [2014-01-16T15:08:43.690970 #16642]  INFO -- default-ubuntu-1204: 
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 53291 files and directories currently installed.)I, [2014-01-16T15:08:43.779414 #16642]  INFO -- default-ubuntu-1204: 
+Unpacking chef (from .../chef__amd64.deb) ...I, [2014-01-16T15:08:43.782025 #16642]  INFO -- default-ubuntu-1204: 
+Setting up chef (11.8.2-1.ubuntu.12.04) ...I, [2014-01-16T15:08:47.850472 #16642]  INFO -- default-ubuntu-1204: 
+Thank you for installing Chef!I, [2014-01-16T15:08:47.870571 #16642]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:08:47.934927 #16642]  INFO -- default-ubuntu-1204: Transfering files to <default-ubuntu-1204>
+[2014-01-16T21:08:49+00:00] INFO: Forking chef instance to converge...I, [2014-01-16T15:08:49.902306 #16642]  INFO -- default-ubuntu-1204: 
+Starting Chef Client, version 11.8.2[0mI, [2014-01-16T15:08:49.960606 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:49+00:00] INFO: *** Chef 11.8.2 ***I, [2014-01-16T15:08:49.961315 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:49+00:00] INFO: Chef-client pid: 1188I, [2014-01-16T15:08:49.961650 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSONI, [2014-01-16T15:08:50.298839 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Run List is [recipe[bowser::default]]I, [2014-01-16T15:08:50.303421 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Run List expands to [bowser::default]I, [2014-01-16T15:08:50.303643 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Starting Chef Run for default-ubuntu-1204I, [2014-01-16T15:08:50.303884 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Running start handlersI, [2014-01-16T15:08:50.304368 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Start handlers complete.I, [2014-01-16T15:08:50.304667 #16642]  INFO -- default-ubuntu-1204: 
+Compiling Cookbooks...[0mI, [2014-01-16T15:08:50.309614 #16642]  INFO -- default-ubuntu-1204: 
+Converging 5 resources[0mI, [2014-01-16T15:08:50.318727 #16642]  INFO -- default-ubuntu-1204: 
+Recipe: hostname::default[0mI, [2014-01-16T15:08:50.319607 #16642]  INFO -- default-ubuntu-1204: 
+  * file[/etc/hostname] action create[0m[2014-01-16T21:08:50+00:00] INFO: Processing file[/etc/hostname] action create (hostname::default line 33)I, [2014-01-16T15:08:50.320312 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: file[/etc/hostname] backed up to /tmp/kitchen/backup/etc/hostname.chef-20140116210850.323858I, [2014-01-16T15:08:50.325143 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: file[/etc/hostname] updated file contents /etc/hostnameI, [2014-01-16T15:08:50.326023 #16642]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-01-16T15:08:50.326587 #16642]  INFO -- default-ubuntu-1204: 
+    - update content in file /etc/hostname from b245b4 to ff7676[0m[37mI, [2014-01-16T15:08:50.327134 #16642]  INFO -- default-ubuntu-1204: 
+        --- /etc/hostname	2014-01-16 21:08:30.887186436 +0000[0m[37mI, [2014-01-16T15:08:50.327895 #16642]  INFO -- default-ubuntu-1204: 
+        +++ /tmp/.hostname20140116-1188-rilsdo	2014-01-16 21:08:50.320405393 +0000[0m[37mI, [2014-01-16T15:08:50.328747 #16642]  INFO -- default-ubuntu-1204: 
+        @@ -1,2 +1,2 @@[0m[37mI, [2014-01-16T15:08:50.329346 #16642]  INFO -- default-ubuntu-1204: 
+        -default-ubuntu-1204.vagrantup.com[0m[37mI, [2014-01-16T15:08:50.329874 #16642]  INFO -- default-ubuntu-1204: 
+        +userhostname[0mI, [2014-01-16T15:08:50.330999 #16642]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:08:50.331305 #16642]  INFO -- default-ubuntu-1204: 
+  * execute[hostname userhostname] action run[0m[2014-01-16T21:08:50+00:00] INFO: Processing execute[hostname userhostname] action run (hostname::default line 39)I, [2014-01-16T15:08:50.351050 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: execute[hostname userhostname] ran successfullyI, [2014-01-16T15:08:50.402930 #16642]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-01-16T15:08:50.404718 #16642]  INFO -- default-ubuntu-1204: 
+    - execute hostname userhostname[0mI, [2014-01-16T15:08:50.405952 #16642]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:08:50.406726 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: execute[hostname userhostname] not queuing delayed action reload on ohai[reload] (delayed), as it's already been queuedI, [2014-01-16T15:08:50.408240 #16642]  INFO -- default-ubuntu-1204: 
+  * hostsfile_entry[localhost] action create[0m[2014-01-16T21:08:50+00:00] INFO: Processing hostsfile_entry[localhost] action create (hostname::default line 44)I, [2014-01-16T15:08:50.410832 #16642]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-01-16T15:08:50.421508 #16642]  INFO -- default-ubuntu-1204: 
+    - Create hostsfile_entry[localhost][0mI, [2014-01-16T15:08:50.421842 #16642]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:08:50.422111 #16642]  INFO -- default-ubuntu-1204: 
+  * hostsfile_entry[set hostname] action create[0m[2014-01-16T21:08:50+00:00] INFO: Processing hostsfile_entry[set hostname] action create (hostname::default line 50)I, [2014-01-16T15:08:50.422612 #16642]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-01-16T15:08:50.429430 #16642]  INFO -- default-ubuntu-1204: 
+    - Create hostsfile_entry[set hostname][0mI, [2014-01-16T15:08:50.429724 #16642]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:08:50.429937 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: hostsfile_entry[set hostname] not queuing delayed action reload on ohai[reload] (delayed), as it's already been queuedI, [2014-01-16T15:08:50.430249 #16642]  INFO -- default-ubuntu-1204: 
+  * ohai[reload] action nothing[0m[2014-01-16T21:08:50+00:00] INFO: Processing ohai[reload] action nothing (hostname::default line 58)I, [2014-01-16T15:08:50.430982 #16642]  INFO -- default-ubuntu-1204: 
+ (skipped due to action :nothing)[0mI, [2014-01-16T15:08:50.431450 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: file[/etc/hostname] sending reload action to ohai[reload] (delayed)I, [2014-01-16T15:08:50.431906 #16642]  INFO -- default-ubuntu-1204: 
+  * ohai[reload] action reload[0m[2014-01-16T21:08:50+00:00] INFO: Processing ohai[reload] action reload (hostname::default line 58)I, [2014-01-16T15:08:50.432581 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: ohai[reload] reloadedI, [2014-01-16T15:08:50.699345 #16642]  INFO -- default-ubuntu-1204: 
+[32mI, [2014-01-16T15:08:50.699606 #16642]  INFO -- default-ubuntu-1204: 
+    - re-run ohai and merge results into node attributes[0mI, [2014-01-16T15:08:50.700118 #16642]  INFO -- default-ubuntu-1204: 
+[0mI, [2014-01-16T15:08:50.700346 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Chef Run complete in 0.396962241 secondsI, [2014-01-16T15:08:50.700845 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Running report handlersI, [2014-01-16T15:08:50.701274 #16642]  INFO -- default-ubuntu-1204: 
+[2014-01-16T21:08:50+00:00] INFO: Report handlers completeI, [2014-01-16T15:08:50.701627 #16642]  INFO -- default-ubuntu-1204: 
+Chef Client finished, 5 resources updated[0mI, [2014-01-16T15:08:50.702045 #16642]  INFO -- default-ubuntu-1204: 
+I, [2014-01-16T15:08:50.763954 #16642]  INFO -- default-ubuntu-1204: Finished converging <default-ubuntu-1204> (0m13.35s).
+I, [2014-01-16T15:08:50.764085 #16642]  INFO -- default-ubuntu-1204: -----> Setting up <default-ubuntu-1204>...
+I, [2014-01-16T15:08:50.764943 #16642]  INFO -- default-ubuntu-1204: Finished setting up <default-ubuntu-1204> (0m0.00s).
+I, [2014-01-16T15:08:50.765041 #16642]  INFO -- default-ubuntu-1204: -----> Verifying <default-ubuntu-1204>...
+I, [2014-01-16T15:08:50.765831 #16642]  INFO -- default-ubuntu-1204: Finished verifying <default-ubuntu-1204> (0m0.00s).
+I, [2014-01-16T15:08:50.765915 #16642]  INFO -- default-ubuntu-1204: Finished testing <default-ubuntu-1204> (1m14.89s).

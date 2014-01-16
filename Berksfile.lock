@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "hostname": {
+      "locked_version": "0.1.0"
+    },
+    "bowser": {
+      "path": "."
+    },
+    "hostsfile": {
+      "locked_version": "2.4.2"
+    }
+  }
+}

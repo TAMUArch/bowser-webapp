@@ -1,0 +1,142 @@
+I, [2014-01-16T14:39:05.149789 #2767]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T14:39:07.285426 #2767]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:39:07.285667 #2767]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:39:07.308250 #2767]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:39:07.308557 #2767]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:40:03.051014 #2767]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T14:40:16.544189 #2767] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T14:40:43.603694 #4073]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T14:40:46.132102 #4073]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:40:46.132630 #4073]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:40:51.511220 #4073]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:40:51.511494 #4073]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:41:46.295623 #4073]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T14:42:00.285206 #4073] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T14:53:20.697185 #5763]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T14:53:22.849164 #5763]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:53:22.849656 #5763]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:53:28.260279 #5763]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:53:28.260551 #5763]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:54:24.216238 #5763]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T14:54:37.664767 #5763] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T14:54:55.941379 #7345]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T14:54:58.153434 #7345]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:54:58.153846 #7345]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:55:06.080938 #7345]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:55:06.081193 #7345]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T14:56:01.187659 #7345]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T14:56:14.283083 #7345] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T14:58:57.182012 #9789]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T14:58:59.335719 #9789]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T14:58:59.336161 #9789]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T14:59:04.624903 #9789]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T14:59:04.625137 #9789]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:00:04.813672 #9789]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T15:00:16.365665 #9789] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T15:01:20.441901 #11563]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T15:01:22.607949 #11563]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:01:22.608363 #11563]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:01:28.013740 #11563]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:01:28.013933 #11563]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:02:26.622076 #11563]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:02:27.515299 #13131]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T15:02:29.926902 #13131]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:02:29.927306 #13131]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+E, [2014-01-16T15:02:33.819555 #11563] ERROR -- Kitchen: ------Exception-------
+E, [2014-01-16T15:02:33.819649 #11563] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-01-16T15:02:33.819736 #11563] ERROR -- Kitchen: Message: Failed to complete #converge action: [closed stream]
+E, [2014-01-16T15:02:33.819800 #11563] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-01-16T15:02:33.819863 #11563] ERROR -- Kitchen: Class: IOError
+E, [2014-01-16T15:02:33.819922 #11563] ERROR -- Kitchen: Message: closed stream
+E, [2014-01-16T15:02:33.819979 #11563] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-01-16T15:02:33.820035 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2014-01-16T15:02:33.820093 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2014-01-16T15:02:33.820151 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/packet_stream.rb:73:in `available_for_read?'
+E, [2014-01-16T15:02:33.820208 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/packet_stream.rb:85:in `next_packet'
+E, [2014-01-16T15:02:33.820266 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/session.rb:172:in `block in poll_message'
+E, [2014-01-16T15:02:33.820323 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/session.rb:167:in `loop'
+E, [2014-01-16T15:02:33.820380 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/transport/session.rb:167:in `poll_message'
+E, [2014-01-16T15:02:33.820475 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:460:in `dispatch_incoming_packets'
+E, [2014-01-16T15:02:33.820538 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:221:in `preprocess'
+E, [2014-01-16T15:02:33.820596 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:205:in `process'
+E, [2014-01-16T15:02:33.820654 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2014-01-16T15:02:33.820712 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2014-01-16T15:02:33.820770 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2014-01-16T15:02:33.820827 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:164:in `exec_with_exit'
+E, [2014-01-16T15:02:33.820884 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:54:in `exec'
+E, [2014-01-16T15:02:33.820942 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:109:in `run_remote'
+E, [2014-01-16T15:02:33.820999 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:43:in `block in converge'
+E, [2014-01-16T15:02:33.821065 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-01-16T15:02:33.821136 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2014-01-16T15:02:33.821197 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2014-01-16T15:02:33.821254 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-01-16T15:02:33.821312 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-01-16T15:02:33.821368 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-01-16T15:02:33.821468 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-01-16T15:02:33.821536 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-01-16T15:02:33.821594 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-01-16T15:02:33.821651 #11563] ERROR -- Kitchen: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:02:33.821709 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-01-16T15:02:33.821766 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-01-16T15:02:33.821823 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-01-16T15:02:33.821879 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-01-16T15:02:33.821936 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-01-16T15:02:33.821993 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-01-16T15:02:33.822050 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-01-16T15:02:33.822109 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-01-16T15:02:33.822167 #11563] ERROR -- Kitchen: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:02:33.822224 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-01-16T15:02:33.822281 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `public_send'
+E, [2014-01-16T15:02:33.822339 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2014-01-16T15:02:33.822397 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `map'
+E, [2014-01-16T15:02:33.822515 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2014-01-16T15:02:33.822586 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:146:in `block in test'
+E, [2014-01-16T15:02:33.822657 #11563] ERROR -- Kitchen: /home/charlie/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-01-16T15:02:33.822718 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:137:in `test'
+E, [2014-01-16T15:02:33.822776 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2014-01-16T15:02:33.822833 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2014-01-16T15:02:33.822891 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2014-01-16T15:02:33.822948 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2014-01-16T15:02:33.823005 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2014-01-16T15:02:33.823063 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-01-16T15:02:33.823121 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-01-16T15:02:33.823178 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/gems/test-kitchen-1.1.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-01-16T15:02:33.823236 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `load'
+E, [2014-01-16T15:02:33.823293 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/kitchen:23:in `<main>'
+E, [2014-01-16T15:02:33.823350 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-01-16T15:02:33.823408 #11563] ERROR -- Kitchen: /home/charlie/.rvm/gems/ruby-2.0.0-p247@bowser/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-01-16T15:02:33.823465 #11563] ERROR -- Kitchen: ----------------------
+I, [2014-01-16T15:02:35.524076 #13131]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:02:35.524337 #13131]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:03:02.926352 #14268]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T15:03:05.130213 #14268]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:03:05.130386 #14268]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:03:05.131998 #14268]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:03:05.132098 #14268]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:03:10.776446 #14268]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T15:03:29.860337 #14268] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T15:03:31.556826 #13131]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T15:03:35.974399 #13131] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T15:04:51.789372 #14977]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T15:04:53.957832 #14977]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:04:53.958259 #14977]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:04:59.450817 #14977]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:04:59.451068 #14977]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:05:54.016417 #14977]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+E, [2014-01-16T15:06:06.527045 #14977] ERROR -- Kitchen: Converge failed on instance <default-ubuntu-1204>.
+I, [2014-01-16T15:07:33.697892 #16642]  INFO -- Kitchen: -----> Starting Kitchen (v1.1.1)
+I, [2014-01-16T15:07:35.875658 #16642]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1204>
+I, [2014-01-16T15:07:35.876081 #16642]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1204>...
+I, [2014-01-16T15:07:41.532694 #16642]  INFO -- Kitchen: -----> Testing <default-ubuntu-1204>
+I, [2014-01-16T15:07:41.532858 #16642]  INFO -- Kitchen: -----> Creating <default-ubuntu-1204>...
+I, [2014-01-16T15:08:37.414308 #16642]  INFO -- Kitchen: -----> Converging <default-ubuntu-1204>...
+I, [2014-01-16T15:08:50.764048 #16642]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1204>...
+I, [2014-01-16T15:08:50.765005 #16642]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1204>...
+I, [2014-01-16T15:08:50.765978 #16642]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos-64>
+I, [2014-01-16T15:08:50.766102 #16642]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-01-16T15:08:50.766558 #16642]  INFO -- Kitchen: -----> Testing <default-centos-64>
+I, [2014-01-16T15:08:50.766657 #16642]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-01-16T15:09:51.269388 #16642]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-01-16T15:10:37.486697 #16642]  INFO -- Kitchen: -----> Setting up <default-centos-64>...
+I, [2014-01-16T15:10:37.487663 #16642]  INFO -- Kitchen: -----> Verifying <default-centos-64>...
+I, [2014-01-16T15:10:37.488648 #16642]  INFO -- Kitchen: -----> Kitchen is finished. (3m3.79s)

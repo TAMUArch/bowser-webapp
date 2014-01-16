@@ -1,0 +1,118 @@
+I, [2014-01-16T15:08:50.766010 #16642]  INFO -- default-centos-64: -----> Cleaning up any prior instances of <default-centos-64>
+I, [2014-01-16T15:08:50.766134 #16642]  INFO -- default-centos-64: -----> Destroying <default-centos-64>...
+I, [2014-01-16T15:08:50.766453 #16642]  INFO -- default-centos-64: Finished destroying <default-centos-64> (0m0.00s).
+I, [2014-01-16T15:08:50.766595 #16642]  INFO -- default-centos-64: -----> Testing <default-centos-64>
+I, [2014-01-16T15:08:50.766689 #16642]  INFO -- default-centos-64: -----> Creating <default-centos-64>...
+I, [2014-01-16T15:08:53.106329 #16642]  INFO -- default-centos-64: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-01-16T15:08:53.373540 #16642]  INFO -- default-centos-64: [default] Importing base box 'opscode-centos-6.4'...
+Progress: 10%Progress: 20%Progress: 40%Progress: 70%Progress: 80%Progress: 90%I, [2014-01-16T15:09:21.264050 #16642]  INFO -- default-centos-64: [default] Matching MAC address for NAT networking...
+I, [2014-01-16T15:09:22.246490 #16642]  INFO -- default-centos-64: [default] Setting the name of the VM...
+I, [2014-01-16T15:09:22.517838 #16642]  INFO -- default-centos-64: [default] Clearing any previously set forwarded ports...
+I, [2014-01-16T15:09:22.751090 #16642]  INFO -- default-centos-64: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-01-16T15:09:24.560561 #16642]  INFO -- default-centos-64: [default] Fixed port collision for 22 => 2222. Now on port 2202.
+I, [2014-01-16T15:09:24.818000 #16642]  INFO -- default-centos-64: [default] Creating shared folders metadata...
+I, [2014-01-16T15:09:24.818235 #16642]  INFO -- default-centos-64: [default] Clearing any previously set network interfaces...
+I, [2014-01-16T15:09:24.940900 #16642]  INFO -- default-centos-64: [default] Preparing network interfaces based on configuration...
+I, [2014-01-16T15:09:25.054757 #16642]  INFO -- default-centos-64: [default] Forwarding ports...
+I, [2014-01-16T15:09:25.132630 #16642]  INFO -- default-centos-64: [default] -- 22 => 2202 (adapter 1)
+I, [2014-01-16T15:09:25.605850 #16642]  INFO -- default-centos-64: [default] Running 'pre-boot' VM customizations...
+I, [2014-01-16T15:09:25.773611 #16642]  INFO -- default-centos-64: [default] Booting VM...
+I, [2014-01-16T15:09:26.204276 #16642]  INFO -- default-centos-64: [default] Waiting for VM to boot. This can take a few minutes.
+I, [2014-01-16T15:09:45.143259 #16642]  INFO -- default-centos-64: [default] VM booted and ready for use!
+I, [2014-01-16T15:09:45.193658 #16642]  INFO -- default-centos-64: [default] Setting hostname...
+I, [2014-01-16T15:09:48.194206 #16642]  INFO -- default-centos-64: [default] Mounting shared folders...
+I, [2014-01-16T15:09:51.267321 #16642]  INFO -- default-centos-64: Vagrant instance <default-centos-64> created.
+I, [2014-01-16T15:09:51.269235 #16642]  INFO -- default-centos-64: Finished creating <default-centos-64> (1m0.50s).
+I, [2014-01-16T15:09:51.269500 #16642]  INFO -- default-centos-64: -----> Converging <default-centos-64>...
+I, [2014-01-16T15:09:51.270754 #16642]  INFO -- default-centos-64: Preparing files for transfer
+I, [2014-01-16T15:09:51.300842 #16642]  INFO -- default-centos-64: Resolving cookbook dependencies with Berkshelf...
+I, [2014-01-16T15:09:51.331839 #16642]  INFO -- default-centos-64: Removing non-cookbook files before transfer
+I, [2014-01-16T15:09:51.333239 #16642]  INFO -- default-centos-64: Preparing data bags
+I, [2014-01-16T15:09:51.529007 #16642]  INFO -- default-centos-64: -----> Installing Chef Omnibus (true)
+I, [2014-01-16T15:09:51.529150 #16642]  INFO -- default-centos-64: downloading https://www.opscode.com/chef/install.sh
+I, [2014-01-16T15:09:51.529218 #16642]  INFO -- default-centos-64:   to file /tmp/install.sh
+I, [2014-01-16T15:09:51.529623 #16642]  INFO -- default-centos-64: trying wget...
+I, [2014-01-16T15:09:56.700240 #16642]  INFO -- default-centos-64: Downloading Chef  for el...
+I, [2014-01-16T15:09:56.702152 #16642]  INFO -- default-centos-64: downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=el&pv=6&m=x86_64
+I, [2014-01-16T15:09:56.702202 #16642]  INFO -- default-centos-64:   to file /tmp/install.sh.1836/metadata.txt
+I, [2014-01-16T15:09:56.702229 #16642]  INFO -- default-centos-64: trying wget...
+I, [2014-01-16T15:10:01.885946 #16642]  INFO -- default-centos-64: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.8.2-1.el6.x86_64.rpm
+I, [2014-01-16T15:10:01.886007 #16642]  INFO -- default-centos-64: md5	10f3d0da82efa973fe91cc24a6a74549
+I, [2014-01-16T15:10:01.886033 #16642]  INFO -- default-centos-64: sha256	044558f38d25bbf75dbd5790ccce892a38e5e9f2a091ed55367ab914fbd1cfed
+I, [2014-01-16T15:10:01.888941 #16642]  INFO -- default-centos-64: downloaded metadata file looks valid...
+I, [2014-01-16T15:10:01.891040 #16642]  INFO -- default-centos-64: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-11.8.2-1.el6.x86_64.rpm
+I, [2014-01-16T15:10:01.891077 #16642]  INFO -- default-centos-64:   to file /tmp/install.sh.1836/chef-.x86_64.rpm
+I, [2014-01-16T15:10:01.891102 #16642]  INFO -- default-centos-64: trying wget...
+I, [2014-01-16T15:10:30.861857 #16642]  INFO -- default-centos-64: Checksum compare with sha256sum succeeded.
+I, [2014-01-16T15:10:30.863678 #16642]  INFO -- default-centos-64: Installing Chef 
+I, [2014-01-16T15:10:30.863716 #16642]  INFO -- default-centos-64: installing with rpm...
+I, [2014-01-16T15:10:30.903218 #16642]  INFO -- default-centos-64: warning: /tmp/install.sh.1836/chef-.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)I, [2014-01-16T15:10:31.200540 #16642]  INFO -- default-centos-64: #########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+   1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)I, [2014-01-16T15:10:33.473999 #16642]  INFO -- default-centos-64: ########################################### ( 99%)########################################### [100%]
+I, [2014-01-16T15:10:34.077992 #16642]  INFO -- default-centos-64: Thank you for installing Chef!
+I, [2014-01-16T15:10:34.164686 #16642]  INFO -- default-centos-64: Transfering files to <default-centos-64>
+I, [2014-01-16T15:10:36.425244 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Forking chef instance to converge...
+I, [2014-01-16T15:10:36.499957 #16642]  INFO -- default-centos-64: Starting Chef Client, version 11.8.2[0m
+I, [2014-01-16T15:10:36.500040 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: *** Chef 11.8.2 ***
+I, [2014-01-16T15:10:36.500073 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Chef-client pid: 1944
+I, [2014-01-16T15:10:36.883276 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Setting the run_list to ["recipe[bowser::default]"] from JSON
+I, [2014-01-16T15:10:36.888337 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Run List is [recipe[bowser::default]]
+I, [2014-01-16T15:10:36.888380 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Run List expands to [bowser::default]
+I, [2014-01-16T15:10:36.888416 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Starting Chef Run for default-centos-64
+I, [2014-01-16T15:10:36.888444 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Running start handlers
+I, [2014-01-16T15:10:36.888470 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Start handlers complete.
+I, [2014-01-16T15:10:36.892428 #16642]  INFO -- default-centos-64: Compiling Cookbooks...[0m
+I, [2014-01-16T15:10:36.900724 #16642]  INFO -- default-centos-64: Converging 5 resources[0m
+I, [2014-01-16T15:10:36.901720 #16642]  INFO -- default-centos-64: Recipe: hostname::default[0m
+I, [2014-01-16T15:10:36.901760 #16642]  INFO -- default-centos-64:   * file[/etc/hostname] action create[0m
+I, [2014-01-16T15:10:36.902718 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Processing file[/etc/hostname] action create (hostname::default line 33)
+I, [2014-01-16T15:10:36.904008 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: file[/etc/hostname] created file /etc/hostname
+I, [2014-01-16T15:10:36.904045 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:36.904072 #16642]  INFO -- default-centos-64:     - create new file /etc/hostname[0m
+I, [2014-01-16T15:10:36.906022 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: file[/etc/hostname] updated file contents /etc/hostname
+I, [2014-01-16T15:10:36.906058 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:36.907065 #16642]  INFO -- default-centos-64: 
+I, [2014-01-16T15:10:36.907103 #16642]  INFO -- default-centos-64:     - update content in file /etc/hostname from none to ff7676[0m[37m
+I, [2014-01-16T15:10:36.907164 #16642]  INFO -- default-centos-64:  --- /etc/hostname	2014-01-16 21:10:35.670546720 +0000[0m[37m
+I, [2014-01-16T15:10:36.907199 #16642]  INFO -- default-centos-64:  +++ /tmp/.hostname20140116-1944-1quuihe	2014-01-16 21:10:35.671547220 +0000[0m[37m
+I, [2014-01-16T15:10:36.907230 #16642]  INFO -- default-centos-64:  @@ -1 +1,2 @@[0m[37m
+I, [2014-01-16T15:10:36.907261 #16642]  INFO -- default-centos-64:  +userhostname[0m[2014-01-16T21:10:35+00:00] INFO: file[/etc/hostname] mode changed to 644
+I, [2014-01-16T15:10:36.907287 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:36.907311 #16642]  INFO -- default-centos-64:     - change mode from '' to '0644'[0m
+I, [2014-01-16T15:10:37.043358 #16642]  INFO -- default-centos-64: 
+I, [2014-01-16T15:10:37.043441 #16642]  INFO -- default-centos-64: [0m
+I, [2014-01-16T15:10:37.043469 #16642]  INFO -- default-centos-64:   * execute[hostname userhostname] action run[0m[2014-01-16T21:10:35+00:00] INFO: Processing execute[hostname userhostname] action run (hostname::default line 39)
+I, [2014-01-16T15:10:37.095128 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: execute[hostname userhostname] ran successfully
+I, [2014-01-16T15:10:37.095725 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:37.095805 #16642]  INFO -- default-centos-64:     - execute hostname userhostname[0m
+I, [2014-01-16T15:10:37.096822 #16642]  INFO -- default-centos-64: 
+I, [2014-01-16T15:10:37.096906 #16642]  INFO -- default-centos-64: [0m
+I, [2014-01-16T15:10:37.098911 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: execute[hostname userhostname] not queuing delayed action reload on ohai[reload] (delayed), as it's already been queued
+I, [2014-01-16T15:10:37.098998 #16642]  INFO -- default-centos-64:   * hostsfile_entry[localhost] action create[0m
+I, [2014-01-16T15:10:37.099864 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: Processing hostsfile_entry[localhost] action create (hostname::default line 44)
+I, [2014-01-16T15:10:37.105955 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:37.106004 #16642]  INFO -- default-centos-64:     - Create hostsfile_entry[localhost][0m
+I, [2014-01-16T15:10:37.106029 #16642]  INFO -- default-centos-64: [0m
+I, [2014-01-16T15:10:37.106053 #16642]  INFO -- default-centos-64:   * hostsfile_entry[set hostname] action create[0m[2014-01-16T21:10:35+00:00] INFO: Processing hostsfile_entry[set hostname] action create (hostname::default line 50)
+I, [2014-01-16T15:10:37.110199 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:37.110240 #16642]  INFO -- default-centos-64:     - Create hostsfile_entry[set hostname][0m
+I, [2014-01-16T15:10:37.110267 #16642]  INFO -- default-centos-64: [0m
+I, [2014-01-16T15:10:37.110293 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: hostsfile_entry[set hostname] not queuing delayed action reload on ohai[reload] (delayed), as it's already been queued
+I, [2014-01-16T15:10:37.110329 #16642]  INFO -- default-centos-64:   * ohai[reload] action nothing[0m[2014-01-16T21:10:35+00:00] INFO: Processing ohai[reload] action nothing (hostname::default line 58)
+I, [2014-01-16T15:10:37.110355 #16642]  INFO -- default-centos-64:  (skipped due to action :nothing)[0m
+I, [2014-01-16T15:10:37.110380 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:35+00:00] INFO: file[/etc/hostname] sending reload action to ohai[reload] (delayed)
+I, [2014-01-16T15:10:37.110416 #16642]  INFO -- default-centos-64:   * ohai[reload] action reload[0m[2014-01-16T21:10:35+00:00] INFO: Processing ohai[reload] action reload (hostname::default line 58)
+I, [2014-01-16T15:10:37.403315 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:36+00:00] INFO: ohai[reload] reloaded
+I, [2014-01-16T15:10:37.404246 #16642]  INFO -- default-centos-64: [32m
+I, [2014-01-16T15:10:37.404285 #16642]  INFO -- default-centos-64:     - re-run ohai and merge results into node attributes[0m
+I, [2014-01-16T15:10:37.404313 #16642]  INFO -- default-centos-64: [0m
+I, [2014-01-16T15:10:37.404361 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:36+00:00] INFO: Chef Run complete in 0.516138512 seconds
+I, [2014-01-16T15:10:37.404410 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:36+00:00] INFO: Running report handlers
+I, [2014-01-16T15:10:37.404442 #16642]  INFO -- default-centos-64: [2014-01-16T21:10:36+00:00] INFO: Report handlers complete
+I, [2014-01-16T15:10:37.404466 #16642]  INFO -- default-centos-64: Chef Client finished, 5 resources updated[0m
+I, [2014-01-16T15:10:37.486617 #16642]  INFO -- default-centos-64: Finished converging <default-centos-64> (0m46.22s).
+I, [2014-01-16T15:10:37.486730 #16642]  INFO -- default-centos-64: -----> Setting up <default-centos-64>...
+I, [2014-01-16T15:10:37.487611 #16642]  INFO -- default-centos-64: Finished setting up <default-centos-64> (0m0.00s).
+I, [2014-01-16T15:10:37.487693 #16642]  INFO -- default-centos-64: -----> Verifying <default-centos-64>...
+I, [2014-01-16T15:10:37.488502 #16642]  INFO -- default-centos-64: Finished verifying <default-centos-64> (0m0.00s).
+I, [2014-01-16T15:10:37.488577 #16642]  INFO -- default-centos-64: Finished testing <default-centos-64> (1m46.72s).
