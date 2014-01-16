@@ -1,4 +1,9 @@
 {
   "id": "network" ,
-  "hostname": "userhostname"
+  "hostname": "userhostname" ,
+  "oldip": "useroldip" ,
+  "newip": "usernewip",
+  "interface": "userinterface" ,
+  "netmask": "usernetmask" ,
+  "broadcast": "userbroadcast" ,
 }
