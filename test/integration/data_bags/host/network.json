@@ -5,5 +5,5 @@
   "newip": "usernewip",
   "interface": "userinterface" ,
   "netmask": "usernetmask" ,
-  "broadcast": "userbroadcast" ,
+  "broadcast": "userbroadcast"
 }

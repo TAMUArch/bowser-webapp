@@ -17,6 +17,9 @@ ifconfig data_bag_item('host', 'network')["oldip"] do
   device data_bag_item('host', 'network')["interface"]
   mask data_bag_item('host', 'network')["netmask"]
   bcast data_bag_item('host', 'network')["broadcast"]
+  onboot yes
 
+  action :add
+  action :enable
 end
 
