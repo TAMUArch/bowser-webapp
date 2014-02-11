@@ -21,12 +21,14 @@ helpers do
     way = gate.split(' ')
     @gateway = way[2]
   end
+
   def cidr
     foo = `ip route show`
     bar = foo.split('/')
     foobar = bar[1].split(' ')
     @cidr = foobar[0]
   end
+
   def networkname
     network = `ip route show | grep default`
     name = network.split(' ')
@@ -70,11 +72,9 @@ post '/secure/bowser' do
     hostname = `sudo su -c 'echo #{params[:hostname]} > /etc/hostname && hostname #{params[:hostname]}'`
     puts "Your hostname is #{params[:hostname]}"
     config = true
-  else
-    puts "hostname input unchanged"
   end
 
-  old_ip = NetworkInterface.addresses('eth0')[2].first["addr"]
+  old_ip = NetworkInterface.addresses('eth0')[2].first['addr']
 
   unless old_ip == params[:ip]
     add_ip = `sudo ip addr add #{params[:ip]}/#{params[:cidr]} dev #{params[:interface]}`
@@ -82,19 +82,15 @@ post '/secure/bowser' do
     puts "Your ip address is #{params[:ip]}"
     puts "Your interface is #{params[:interface]}"
     config = true
-  else
-    puts "ip input unchanged"
   end
 
-  old_net = NetworkInterface.addresses('eth0')[2].first["netmask"]
+  old_net = NetworkInterface.addresses('eth0')[2].first['netmask']
 
   unless old_net == params[:netmask]
     netmask = `sudo ifconfig #{params[:interface]} netmask #{params[:netmask]}`
     puts "Netmask in cidr #{params[:cidr]}"
     puts "Your netmask is #{params[:netmask]}"
     config = true
-  else
-    puts "netmask input unchanged"
   end
 
   unless gateway == params[:gateway]
@@ -102,21 +98,17 @@ post '/secure/bowser' do
     gateway = `sudo ip route add default via #{params[:gateway]}`
     puts "Your gateway address is #{params[:gateway]}"
     config = true
-  else
-    puts "gateway input unchanged"
   end
 
-  old_broad = NetworkInterface.addresses('eth0')[2].first["broadcast"]
+  old_broad = NetworkInterface.addresses('eth0')[2].first['broadcast']
 
   unless old_broad == params[:broadcast]
     broadcast = `sudo ifconfig #{params[:interface]} broadcast #{params[:broadcast]}`
     puts "Your broadcast address is #{params[:broadcast]}"
     config = true
-  else
-    puts "broadcast input unchanged"
   end
 
-  if config == true
+  if config
     config1 = `touch network@#{params[:interface]}`
     config2 = `touch network@.service`
 
@@ -153,7 +145,7 @@ post '/secure/bowser' do
     enable = `sudo systemctl enable network@#{params[:interface]}.service`
     start = `sudo systemctl start network@#{params[:interface]}.service`
   else
-    puts "config was false! no changes!"
+    puts 'config was false! no changes!'
   end
   redirect '/secure/bowser'
 end
@@ -163,10 +155,10 @@ post '/secure/ping' do
   exit = $?.exitstatus
   if exit == 0
     redirect '/secure/good_ping'
-    puts "good ping"
+    puts 'good ping'
   else
     redirect '/secure/bad_ping'
-    puts "bad ping"
+    puts 'bad ping'
   end
 end
 
