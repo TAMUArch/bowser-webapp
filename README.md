@@ -1,6 +1,17 @@
-Bowser Webapp
+Bowser Admin Webapp
 
 View / Modify Bowser Network Settings
+
+Objective is to accomplish the following:
+
+Display, Modify with Chef:
+
+Hostname
+IP Address
+Netmask
+Broadcast Address
+Gateway IP Address
+
 
 MIT License
 
