@@ -12,6 +12,9 @@ Netmask
 Broadcast Address
 Gateway IP Address
 
+And seperately,
+DHCP Settings
+Ping
 
 MIT License
 
