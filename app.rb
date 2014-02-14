@@ -65,7 +65,22 @@ get '/secure/bowser' do
 end
 
 post '/secure/bowser' do
+  form do
+    field :hostname, present: true
+    field :ip, present: true
+    field :interface, present: true
+    field :netmask, present: true
+    field :cidr, present: true
+    field :broadcast, present: true
+    field :gateway, present: true
+  end
 
+  if form.failed?
+    output = slim :secure
+    fill_in_form(output)
+  else
+    
+  end
   config = false
 
   unless `hostname`.chomp == params[:hostname]
