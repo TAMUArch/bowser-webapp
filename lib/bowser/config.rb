@@ -1,24 +1,24 @@
 module Bowser
   class Config
-    attr_accessor :hostname, :ip, :interface, :netmask, :cidr, :broadcast, :gateway
+    attr_accessor :id, :hostname, :ip, :interface, :netmask, :broadcast, :gateway
 
     def initialize(config, options = {})
+      @id = options['id']
       @hostname = options['hostname']
       @ip = options['ip']
       @interface = options['interface']
       @netmask = options['netmask']
-      @cidr = options['cidr']
       @broadcast = options['broadcast']
       @gateway = options['gateway']
     end
 
     def to_hash
       {
+        'id' => @id,
         'hostname' => @hostname,
         'domain' => @domain,
         'interface' => @interface,
         'netmask' => @netmask,
-        'cidr' => @cidr,
         'broadcast' => @broadcast,
         'gateway' => @gateway
       }
