@@ -1,0 +1,37 @@
+{
+  "sources": {
+    "vagrant-bowser": {
+      "path": "../../chef-repo/cookbooks/vagrant-bowser"
+    },
+    "rbenv": {
+      "locked_version": "1.6.5"
+    },
+    "git": {
+      "locked_version": "2.7.0"
+    },
+    "dmg": {
+      "locked_version": "2.0.2"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "yum": {
+      "locked_version": "2.3.2"
+    },
+    "windows": {
+      "locked_version": "1.10.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "runit": {
+      "locked_version": "1.2.0"
+    },
+    "apt": {
+      "locked_version": "2.2.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    }
+  }
+}
