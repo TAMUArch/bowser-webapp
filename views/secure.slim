@@ -16,63 +16,82 @@ html
     link rel="stylesheet" href="/vendor/dist/css/bootstrap.css"
 
     / Custom styles for this template
-    link rel="stylesheet" href="/secure.css"
+    link rel="stylesheet" href="/local/secure.css"
 
   body
 
     .container
 
-      div.logout class="header"
+      .logout.header
         form action='/logout' method='post'
           button.float class="btn btn-lg btn-default" type="submit" Log out
           h2 Bowser Admin
 
-      div data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
-        div.navbar class="bs-sidebar hidden-print affix"
+      .sidebar data-spy="scroll" data-target=".navbar" data-offset-top="20" data-offset-bottom="200"
+        .navbar class="bs-sidebar hidden-print affix"
           ul.nav class="nav" data-spy="affix"
-            li: a href="#setstatic" Set Static IP
-            li: a href="#setwireless" Set Wireless
-            li: a href="#setdhcp" Set DHCP
-            li: a href="#ping" Ping
+            li: a href="#static" Static IP
+            li: a href="#wireless" Wireless
+            li: a href="#dhcp" DHCP
+            li: a href="#textconnectivity" Test Connectivity
 
       form.form-network action="/secure/bowser" method="post"
 
-        h3.form-item-heading#setstatic Set Static IP
+        h3.section-heading#static Set Static IP
 
-        label for="hostname" Hostname
-        input.form-control#hostname type="text" name="hostname" value = `hostname`
-
-        label for="ip" IP Address
-        input.form-control#ip type="text" name="ip" value = NetworkInterface.addresses(networkname)[2].first["addr"]
-
-        label for="interface" Interface
-        input.form-control#interface type="text" name="interface" value = NetworkInterface.interfaces[1]
-
-        label for="netmask" Netmask
-        input.form-control#netmask type="text" name="netmask" value = NetworkInterface.addresses(networkname)[2].first["netmask"]
-
-        label for="cidr" CIDR Notation
-        input.form-control#cidr tye="text" name="cidr" value = cidr
-
-        label for="broadcast" Broadcast Address
-        input.form-control#broadcast type="text" name="broadcast" value = NetworkInterface.addresses(networkname)[2].first["broadcast"]
-
-        label for="gateway" Gateway IP Address
-        input.form-control#gateway type="text" name="gateway" value = gateway
+        .hostname.row
+          .col-xs-6.col-sm-3
+            label for="hostname" Hostname
+          .col-xs-10.col-sm-9
+            input.form-control#hostname type="text" name="hostname"
+        .ip.row
+          .col-xs-6.col-sm-3
+            label for="ip" IP Address
+          .col-xs-10.col-sm-9
+            input.form-control#ip type="text" name="ip"
+        .interface.row
+          .col-xs-6.col-sm-3
+            label for="interface" Interface
+          .col-xs-10.col-sm-9
+            input.form-control#interface type="text" name="interface"
+        .netmask.row
+          .col-xs-6.col-sm-3
+            label for="netmask" Netmask
+          .col-xs-10.col-sm-9
+            input.form-control#netmask type="text" name="netmask"
+        .broadcast.row
+          .col-xs-6.col-sm-3
+            label for="broadcast" Broadcast Address
+          .col-xs-10.col-sm-9
+            input.form-control#broadcast type="text" name="broadcast"
+        .gateway.row
+          .col-xs-6.col-sm-3
+            label for="gateway" Gateway
+          .col-xs-10.col-sm-9
+            input.form-control#gateway type="text" name="gateway"
+        .hidden_values
+          input.form-control#config type="hidden" name="config" value="config"
 
         br
         button class="btn btn-lg btn-primary" type="submit" Submit
 
-        h3.form-item-heading#setwireless Set Wireless
+      .wireless
+        h3.section-heading#wireless Wireless
         p Function Not Enabled
 
-        h3.form-item-heading#setdhcp Set DHCP
-        button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Stop and Disable DHCP Service
-        br
-        button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew DHCP Lease
-        br
-        button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Start DHCP Service at Boot
+      .dhcp
+        h3.section-heading#dhcp DHCP
+        .row
+          .col-xs-6.col-sm-4
+            button class="btn btn-primary btn-lg btn-block" onclick="systemctl stop dhcpcd@eth0.service && systemctl disable dhcpcd@eth0.service" Disable Service
+          .col-xs-6.col-sm-4
+            button class="btn btn-primary btn-lg btn-block" onclick="systemctl enable dhcpcd@eth0.service" Enable Service
+          .col-xs-6.col-sm-4
+            button class="btn btn-primary btn-lg btn-block" onclick="dhcpcd eth0 && systemctl restart dhcpcd@eth0.service" Renew Lease
 
-      form.ping action='/secure/ping' method='post'
-        h3#ping Ping!
-        button class="btn btn-lg btn-primary btn-block" type="submit" Ping!
+      .testconnectivity
+        h3.section-heading#testconnectivity Test Connectivity
+        form.ping action='/secure/ping' method='post'
+          .row
+            .col-xs-6.col-sm-4
+              button class="btn btn-lg btn-primary btn-block" type="submit" Ping
