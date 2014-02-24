@@ -1,3 +1,5 @@
+DEPRECATED
+
 Bowser Admin Webapp
 
 View / Modify Bowser Network Settings
